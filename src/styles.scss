@@ -1,6 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
 @import "./assets/theme.scss";
 html{
-  font-family: 'Roboto', sans-serif;
-;
+  p,h1,h2,h3,span,li,ul{
+    font-family: 'Roboto', sans-serif;
+  }
+
+
+  // @MIXIN
+  
+  // Titre section
+  .title_section{
+    font-size: 150px;
+    text-align: center;
+  }
 }

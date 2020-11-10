@@ -1,3 +1,20 @@
-#content_about{
-  display: flex;
+@import "../../../styles.scss";
+
+#anchor-about{
+  min-height: 100%;
+  #content_about{
+    display: flex;
+    align-items: center;
+
+    .presentation_about{
+      width: 50%;
+      padding: 50px;
+    }
+    .photo_about{
+      width: 50%;
+      padding: 50px;
+    }
+  }
+  
 }
+

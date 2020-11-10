@@ -6,14 +6,20 @@ import { AppComponent } from './app.component';
 import { MainComponent } from './pages/main/main.component';
 import { HeaderComponent } from './components/header/header.component';
 import { AboutComponent } from './pages/about/about.component';
+import { AbPresentationComponent } from './components/ab-presentation/ab-presentation.component';
+import { AbPhotoComponent } from './components/ab-photo/ab-photo.component';
+import { AbExperienceComponent } from './components/ab-experience/ab-experience.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     MainComponent,
     HeaderComponent,
-    AboutComponent
-  ],
+    AboutComponent,
+    AbPresentationComponent,
+    AbPhotoComponent,
+    AbExperienceComponent
+    ],
   imports: [
     BrowserModule,
     AppRoutingModule
