@@ -1,0 +1,66 @@
+<div id="anchor-contact">
+    <div class="title_about">
+      <h2 class="title_section">CONTACT</h2>
+    </div>
+    <div class="form">
+        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+            <div class="row">
+                <div class="col-12">
+                  <label for="name">
+                    Prénom :
+                    <input type="text" formControlName="contact_firstname" required>
+                  </label>
+                </div>  
+                <div class="col-12">
+                  <div *ngIf="contactForm.get('contact_firstname').errors && contactForm.get('contact_lastname').touched">
+                      <span class='errorMessage'>required field</span>
+                  </div>
+                </div>
+                <div class="col-12">
+                  <label for="name">
+                    Nom :
+                    <input type="text" formControlName="contact_lastname" required>
+                  </label>
+                </div>  
+                <div class="col-12">
+                  <div *ngIf="contactForm.get('contact_lastname').errors && contactForm.get('contact_lastname').touched">
+                      <span class='errorMessage'>required field</span>
+                  </div>
+                </div>
+              </div>
+      
+              <div class="row">
+                <div class="col-12">
+                  <label for="email">
+                    Email :
+                    <input type="text" formControlName="contact_email" id="email" required>
+                  </label>
+                  </div>
+                  <div>    
+                    <div *ngIf="contactForm.get('contact_email').errors && contactForm.get('contact_email').touched">
+                        <span class='errorMessage'>required field</span>
+                    </div>
+                  </div>  
+              </div>
+      
+              <div class="row">
+                  <div class="col-12 text-center">
+                    <label for="text">
+                      Text :
+                      <textarea type="text" formControlName="contact_text" id="text" rows="5" cols="33"></textarea>
+                    </label>
+                  </div>
+                  <div class="col-12 text-center">
+                    <div *ngIf="contactForm.get('contact_text').errors && contactForm.get('contact_text').touched">
+                        <span class='errorMessage'>required field</span>
+                    </div>
+                  </div>  
+              </div>
+      
+              <div class="row">
+                <button type="submit" [disabled]="!contactForm.valid" class="btn btn-primary">Send</button>
+              </div>
+      
+        </form>
+    </div>
+</div>

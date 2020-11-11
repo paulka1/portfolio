@@ -1,4 +1,10 @@
 .main_photo{
   display: flex;
   justify-content: center;
+  margin-bottom: 30px;
+  .exemple{
+    border: 2px solid black;
+    width: 100%;
+    height: 600px;
+  }
 }

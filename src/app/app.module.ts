@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -9,6 +10,8 @@ import { AboutComponent } from './pages/about/about.component';
 import { AbPresentationComponent } from './components/ab-presentation/ab-presentation.component';
 import { AbPhotoComponent } from './components/ab-photo/ab-photo.component';
 import { AbExperienceComponent } from './components/ab-experience/ab-experience.component';
+import { ProjectComponent } from './pages/project/project.component';
+import { ContactComponent } from './pages/contact/contact.component';
 
 @NgModule({
   declarations: [
@@ -18,11 +21,14 @@ import { AbExperienceComponent } from './components/ab-experience/ab-experience.
     AboutComponent,
     AbPresentationComponent,
     AbPhotoComponent,
-    AbExperienceComponent
+    AbExperienceComponent,
+    ProjectComponent,
+    ContactComponent
     ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
