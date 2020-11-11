@@ -5,40 +5,27 @@
     <div class="form">
         <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
             <div class="row">
-                <div class="col-12">
+                <div class="col-12 text-center">
                   <label for="name">
-                    Prénom :
-                    <input type="text" formControlName="contact_firstname" required>
+                    <input type="text" placeholder="Nom" formControlName="contact_name" required>
                   </label>
                 </div>  
-                <div class="col-12">
-                  <div *ngIf="contactForm.get('contact_firstname').errors && contactForm.get('contact_lastname').touched">
-                      <span class='errorMessage'>required field</span>
-                  </div>
-                </div>
-                <div class="col-12">
-                  <label for="name">
-                    Nom :
-                    <input type="text" formControlName="contact_lastname" required>
-                  </label>
-                </div>  
-                <div class="col-12">
-                  <div *ngIf="contactForm.get('contact_lastname').errors && contactForm.get('contact_lastname').touched">
+                <div class="col-12 text-center">
+                  <div *ngIf="contactForm.get('contact_name').errors && contactForm.get('contact_name').touched">
                       <span class='errorMessage'>required field</span>
                   </div>
                 </div>
               </div>
       
               <div class="row">
-                <div class="col-12">
+                <div class="col-12 text-center">
                   <label for="email">
-                    Email :
-                    <input type="text" formControlName="contact_email" id="email" required>
+                    <input type="text" placeholder="Email" formControlName="contact_email" id="email" required>
                   </label>
                   </div>
                   <div>    
                     <div *ngIf="contactForm.get('contact_email').errors && contactForm.get('contact_email').touched">
-                        <span class='errorMessage'>required field</span>
+                        <span class='errorMessage' style="margin-bottom: 100px">required field</span>
                     </div>
                   </div>  
               </div>
@@ -46,8 +33,11 @@
               <div class="row">
                   <div class="col-12 text-center">
                     <label for="text">
-                      Text :
-                      <textarea type="text" formControlName="contact_text" id="text" rows="5" cols="33"></textarea>
+                      <textarea 
+                      type="text" 
+                      placeholder="Message" 
+                      formControlName="contact_text" 
+                      class="textarea"></textarea>
                     </label>
                   </div>
                   <div class="col-12 text-center">

@@ -21,8 +21,7 @@ export class ContactComponent implements OnInit {
   // Formulaire creation Product
   formInit(){
     this.contactForm = this.fb.group({
-      contact_lastname: ['',Validators.required],
-      contact_firstname: ['',Validators.required],
+      contact_name: ['',Validators.required],
       contact_email: ['',[Validators.required, Validators.email]],
       contact_text: ['',Validators.required],
     })
@@ -37,4 +36,5 @@ export class ContactComponent implements OnInit {
   //     )
   //     this.formInit()
    }
+  
 }
