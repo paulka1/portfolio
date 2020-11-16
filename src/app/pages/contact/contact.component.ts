@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { FormGroup, Validators, FormBuilder } from '@angular/forms';
+import { ContactService } from '../../services/contact.service';
 
 @Component({
   selector: 'app-contact',
@@ -10,8 +11,12 @@ export class ContactComponent implements OnInit {
 
   contactForm:FormGroup;
 
+  // Success message email send 
+  emailSend:boolean=false;
+
   constructor(
     private fb:FormBuilder,
+    private contactService:ContactService
   ) { }
 
   ngOnInit(): void {
@@ -29,12 +34,12 @@ export class ContactComponent implements OnInit {
 
   onSubmit(){
     console.log(this.contactForm.value)
-  //   this.contactService.sendEmail(this.contactForm.value).subscribe(
-  //     res => {
-  //       this.emailSend = true;
-  //     }
-  //     )
-  //     this.formInit()
+    this.contactService.sendEmail(this.contactForm.value).subscribe(
+      res => {
+        this.emailSend = true;
+      }
+      )
+      // this.formInit()
    }
   
 }

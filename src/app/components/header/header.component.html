@@ -10,7 +10,7 @@
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
         <li class="nav-item">
-          <a class="nav-link" href="#anchor-projects">Projets</a>
+          <a class="nav-link" href="#anchor-project">Projets</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="#anchor-about">A Propos</a>
@@ -24,7 +24,7 @@
 
   <div class="text_header">
     <div>
-      <video autoplay muted loop id="myVideo">
+      <video autoplay muted loop id="myVideo" oncanplay="this.play()" onloadedmetadata="this.muted = true">
         <source src="../../../assets/img/video1.3.mp4" type="video/mp4">
       </video>
     </div>
