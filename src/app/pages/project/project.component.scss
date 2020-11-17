@@ -1,25 +1,43 @@
-// .title_section{
-//   animation: neon .08s ease-in-out infinite alternate;
-//   color: #c6e2ff;
-// }
+#anchor-project{
+  // background-image: url(../../../assets/img/train.svg);
+  // background-repeat: no-repeat;
+  background-color: #ffffff;
+  padding: 100px 0;
+  perspective: 0.7px;
+  perspective-origin: 50% 100%;
+  .bloc_project{
+    border-radius: 50%;
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    background-image: url(../../../assets/img/train.svg);
+    box-shadow: inset -25px -25px 40px rgba(0,0,0,.5);
+    background-image: -webkit-linear-gradient(-45deg, rgba(255,255,220,.3) 0%, transparent 100%);
+    background-image: -moz-linear-gradient(-45deg, rgba(255,255,220,.3) 0%, transparent 100%);  
+    background-image: -o-linear-gradient(-45deg, rgba(255,255,220,.3) 0%, transparent 100%);
+    background-image: -ms-linear-gradient(-45deg, rgba(255,255,220,.3) 0%, transparent 100%);
+  }
 
-// @keyframes neon {
-//   from {
-//     text-shadow:
-//     0 0 6px rgba(202,228,225,0.92),
-//     0 0 30px rgba(202,228,225,0.34),
-//     0 0 12px rgba(30,132,242,0.52),
-//     0 0 21px rgba(30,132,242,0.92),
-//     0 0 34px rgba(30,132,242,0.78),
-//     0 0 54px rgba(30,132,242,0.92);
-//   }
-//   to {
-//     text-shadow:
-//     0 0 6px rgba(202,228,225,0.98),
-//     0 0 30px rgba(202,228,225,0.42),
-//     0 0 12px rgba(30,132,242,0.58),
-//     0 0 22px rgba(30,132,242,0.84),
-//     0 0 38px rgba(30,132,242,0.88),
-//     0 0 60px rgba(30,132,242,1);
-//   }
-// }
+  .bloc_project:hover{
+    
+    box-shadow: inset 25px 25px 40px rgba(0,0,0,.5);
+    background-image: -webkit-linear-gradient(-45deg, rgba(255,255,220,.3) 0%, transparent 100%);
+    background-image: -moz-linear-gradient(-45deg, rgba(255,255,220,.3) 0%, transparent 100%);  
+    background-image: -o-linear-gradient(-45deg, rgba(255,255,220,.3) 0%, transparent 100%);
+    background-image: -ms-linear-gradient(-45deg, rgba(255,255,220,.3) 0%, transparent 100%);
+  }
+  
+   .ligne1{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 80px;
+   }
+
+   .ligne2{
+    display: flex;
+    justify-content: space-evenly;
+   }
+}
+.bloc1:hover + .bloc3{
+  background-color: red!important;
+}

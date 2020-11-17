@@ -4,13 +4,11 @@ html{
   p,h1,h2,h3,span,li,ul{
     font-family: 'Roboto', sans-serif;
   }
-
-
-  // @MIXIN
   
   // Titre section
   .title_section{
     font-size: 150px;
     text-align: center;
+    padding-bottom: 100px;
   }
 }

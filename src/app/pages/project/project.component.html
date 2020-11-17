@@ -1,5 +1,21 @@
-<div id="anchor-project">
+<div id="anchor-project" [ngStyle]="styleBloc1Hover()">
     <div class="title_about">
       <h2 class="title_section">PROJETS</h2>
+    </div>
+    <div class="ligne1">
+      <div class="bloc_project bloc1" (mouseover)="hover=true" (mouseout)="hover=false">
+
+      </div>
+      <div class="bloc_project bloc2" (mouseover)="hover2=true" (mouseout)="hover2=false">
+
+      </div>
+    </div> 
+    <div class="ligne2"> 
+      <div class="bloc_project bloc3" (mouseover)="hover3=true" (mouseout)="hover3=false">
+
+      </div>
+      <div class="bloc_project bloc4" (mouseover)="hover4=true" (mouseout)="hover4=false">
+
+      </div>
     </div>
 </div>
