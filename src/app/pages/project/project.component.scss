@@ -1,43 +1,115 @@
-#anchor-project{
-  // background-image: url(../../../assets/img/train.svg);
-  // background-repeat: no-repeat;
+@import '../../../styles.scss';
+
+#anchor-project {
+  background-repeat: no-repeat;
+  background-size: cover;
   background-color: #ffffff;
-  padding: 100px 0;
+  //padding: 100px 0;
   perspective: 0.7px;
   perspective-origin: 50% 100%;
-  .bloc_project{
-    border-radius: 50%;
-    height: 200px;
-    width: 200px;
-    background-color: white;
-    background-image: url(../../../assets/img/train.svg);
-    box-shadow: inset -25px -25px 40px rgba(0,0,0,.5);
-    background-image: -webkit-linear-gradient(-45deg, rgba(255,255,220,.3) 0%, transparent 100%);
-    background-image: -moz-linear-gradient(-45deg, rgba(255,255,220,.3) 0%, transparent 100%);  
-    background-image: -o-linear-gradient(-45deg, rgba(255,255,220,.3) 0%, transparent 100%);
-    background-image: -ms-linear-gradient(-45deg, rgba(255,255,220,.3) 0%, transparent 100%);
-  }
 
-  .bloc_project:hover{
-    
-    box-shadow: inset 25px 25px 40px rgba(0,0,0,.5);
-    background-image: -webkit-linear-gradient(-45deg, rgba(255,255,220,.3) 0%, transparent 100%);
-    background-image: -moz-linear-gradient(-45deg, rgba(255,255,220,.3) 0%, transparent 100%);  
-    background-image: -o-linear-gradient(-45deg, rgba(255,255,220,.3) 0%, transparent 100%);
-    background-image: -ms-linear-gradient(-45deg, rgba(255,255,220,.3) 0%, transparent 100%);
+  .title_project {
+    //background-color: $greyColor;
+    //opacity: 0.8;
+
+    .title_section {
+      //color: $yellowColor;
+      color: rgb(177,177,182);
+    }
   }
-  
-   .ligne1{
+  .ligne1 {
+
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 80px;
-   }
+    margin-bottom: 7px;
 
-   .ligne2{
+    .bloc_project {
+      height: 500px;
+      width: 500px;
+      background-color: $yellowColor;
+      //background-image: url("../../../assets/img/spirit1.png");
+    }
+  }
+
+  .ligne2 {
     display: flex;
     justify-content: space-evenly;
-   }
-}
-.bloc1:hover + .bloc3{
-  background-color: red!important;
+
+    .bloc_project {
+      height: 500px;
+      width: 500px;
+      background-color: $yellowColor;
+    }
+  }
+
+  /* Portrait and Landscape */
+  @media screen and (max-width: 768px) {
+
+    .ligne1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .bloc_project {
+        height: 500px;
+        width: 500px;
+        margin-bottom: 10px;
+      }
+    }
+    .ligne2 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .bloc_project {
+        height: 500px;
+        width: 500px;
+        margin-bottom: 10px;
+      }
+    }
+  }
+
+
+    //@media screen and (min-width: 576px) {}
+
+  //.bloc_project{
+  //  border-radius: 50%;
+  //  height: 200px;
+  //  width: 200px;
+  //  background-color: white;
+  //  //background: url(../../../assets/img/train.svg);
+  //  box-shadow: inset -25px -25px 40px rgba(0,0,0,.5);
+  //  background-image: -webkit-linear-gradient(-45deg, rgba(255,255,220,.3) 0%, transparent 100%);
+  //  background-image: -moz-linear-gradient(-45deg, rgba(255,255,220,.3) 0%, transparent 100%);
+  //  background-image: -o-linear-gradient(-45deg, rgba(255,255,220,.3) 0%, transparent 100%);
+  //  background-image: -ms-linear-gradient(-45deg, rgba(255,255,220,.3) 0%, transparent 100%);
+  //}
+  //& .bloc3{
+  //  background: url(../../../assets/img/spirit1.png);
+  //  background-repeat: no-repeat;
+  //}
+  //
+  //& .bloc1{
+  //  background: url(../../../assets/img/tattoo-machine.png);
+  //  background-repeat: no-repeat;
+  //  background-size: contain;
+  //}
+  //
+  //.bloc_project:hover{
+  //
+  //  box-shadow: inset 25px 25px 40px rgba(0,0,0,.5);
+  //  background-image: -webkit-linear-gradient(-45deg, rgba(255,255,220,.3) 0%, transparent 100%);
+  //  background-image: -moz-linear-gradient(-45deg, rgba(255,255,220,.3) 0%, transparent 100%);
+  //  background-image: -o-linear-gradient(-45deg, rgba(255,255,220,.3) 0%, transparent 100%);
+  //  background-image: -ms-linear-gradient(-45deg, rgba(255,255,220,.3) 0%, transparent 100%);
+  //}
+
+  //.ligne1 {
+  //  display: flex;
+  //  justify-content: space-evenly;
+  //  margin-bottom: 7px;
+  //}
+  //
+  //.ligne2 {
+  //  display: flex;
+  //  justify-content: space-evenly;
+  //}
 }
