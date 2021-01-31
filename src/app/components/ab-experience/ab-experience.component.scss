@@ -1,25 +1,38 @@
 @import "../../../styles.scss";
 
-.main_exp{
-  .job_school_content{
-    img{
-      width: 100px;
-    }
-    .company_card{
-      width: 235px;
-      margin:50px;
+.main_exp {
+  .job_school_content {
+    .job_exp, .school_exp {
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      border-radius: 10px;
-      box-shadow: 0 1px 20px rgb($greyColor,0.5);
+      flex-direction: row;
 
-      img{
-        width: 100px;
+      .company_card {
+        width: 235px;
+        margin: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border-radius: 10px;
+        box-shadow: 0 1px 20px rgb($greyColor, 0.5);
+        padding: 30px;
+        justify-content: space-between;
+
+        img {
+          width: 100px;
+          margin: 3px;
+        }
+
+        .company_link {
+          color: rgb($greyColor, 0.8);
+        }
+
+        p {
+          text-align: center;
+        }
       }
-      .company_link{
-        color: rgb($greyColor,0.8);
-      }
+    }
+    .school_exp{
+
     }
   }
 }
