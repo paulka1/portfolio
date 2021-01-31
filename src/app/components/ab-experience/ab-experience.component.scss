@@ -1,7 +1,25 @@
+@import "../../../styles.scss";
+
 .main_exp{
   .job_school_content{
     img{
       width: 100px;
+    }
+    .company_card{
+      width: 235px;
+      margin:50px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 10px;
+      box-shadow: 0 1px 20px rgb($greyColor,0.5);
+
+      img{
+        width: 100px;
+      }
+      .company_link{
+        color: rgb($greyColor,0.8);
+      }
     }
   }
 }
