@@ -13,6 +13,7 @@ import { AbPhotoComponent } from './components/ab-photo/ab-photo.component';
 import { AbExperienceComponent } from './components/ab-experience/ab-experience.component';
 import { ProjectComponent } from './pages/project/project.component';
 import { ContactComponent } from './pages/contact/contact.component';
+import { AbLinkComponent } from './components/ab-link/ab-link.component';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import { ContactComponent } from './pages/contact/contact.component';
     AbPhotoComponent,
     AbExperienceComponent,
     ProjectComponent,
-    ContactComponent
+    ContactComponent,
+    AbLinkComponent
     ],
   imports: [
     BrowserModule,

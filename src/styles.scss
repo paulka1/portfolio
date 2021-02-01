@@ -19,11 +19,14 @@ html {
     font-weight: 400;
     font-style: normal;
   }
+  .ab_link{
+    font-family: fira-mono, monospace;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 1.1px;
+  }
 
   .company_name{
-    //font-family: acumin-pro, sans-serif;
-    //font-weight: 700;
-    //font-style: normal;
     font-family: acumin-pro-wide, sans-serif;
     font-weight: 700;
     font-style: normal;
@@ -31,6 +34,41 @@ html {
     margin-top: 10px;
     margin-bottom: 0;
   }
+
+  //Fira Mono Regular
+  //font-family: fira-mono, monospace;
+  //font-weight: 400;
+  //font-style: normal;
+
+  //Fira Mono Bold
+  //font-family: fira-mono, monospace;
+  //font-weight: 700;
+  //font-style: normal;
+
+  //Menco Medium
+  //font-family: menco, sans-serif;
+  //font-weight: 500;
+  //font-style: normal;
+
+  //Menco Light
+  //font-family: menco,sans-serif;
+  //font-weight: 300;
+  //font-style: normal;
+
+  //Menco Light Italic
+  //font-family: menco, sans-serif;
+  //font-weight: 300;
+  //font-style: italic;
+
+  //Menco Bold
+  //font-family: menco, sans-serif;
+  //font-weight: 700;
+  //font-style: normal;
+
+  //Menco Bold Italic
+  //font-family: menco, sans-serif;
+  //font-weight: 700;
+  //font-style: italic;
 
   //Acunmin Bold
   //font-family: acumin-pro,sans-serif;

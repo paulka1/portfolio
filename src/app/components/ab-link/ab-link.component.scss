@@ -1,0 +1,88 @@
+@import "../../../styles.scss";
+
+.tabel {
+  margin: 30px;
+}
+
+.ab_link_container {
+  background-color: black;
+  border-radius: 15px;
+
+  .ab_link.first{
+    background-color: rgba(20, 20, 20, 0.2);
+    display: flex;
+    flex-direction: column;
+    padding: 30px 30px 0 30px;
+  }
+
+  .ab_link {
+    background-color: rgba(20, 20, 20, 0.2);
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px 30px 30px;
+
+    .ab_link_line {
+      margin: 0;
+    }
+
+    .ab_link_number {
+      color: rgb(153, 153, 153, 0.3);
+      padding-right: 20px;
+    }
+
+    .ab_link_let {
+      color: rgb(41, 153, 153);
+      margin-right: 10px;
+    }
+
+    .ab_link_name {
+      color: $greyColor;
+      margin-right: 5px;
+    }
+
+    .ab_link_equal {
+      color: rgb(41, 153, 153);
+      margin-right: 5px;
+    }
+
+    .ab_link_curly_bracket {
+      color: $greyColor;
+    }
+
+    .ab_link_quote_mark {
+      color: rgb(214, 191, 85);
+    }
+
+    .ab_link_img {
+      img {
+        width: 25px;
+        margin-right: 5px;
+        margin-left: 5px;
+      }
+    }
+
+    .ab_link_key {
+      color: rgb(214, 191, 85);
+    }
+
+    .ab_link_semicolon{
+      color: $greyColor;
+      margin-left: 5px;
+    }
+
+    .ab_link_text {
+      a {
+        //text-decoration: inherit;
+        color: rgb(41, 153, 153);
+      }
+    }
+  }
+}
+
+
+//1 blue : rgb(83,148,236)
+//2 red: rgb(255,107,104)
+//3 yellow: rgb(214,191,85)
+//4 cyan: rgb(41,153,153)
+//5 grey: rgb(153,153,153)
+//6 green: rgb(168,192,35)
