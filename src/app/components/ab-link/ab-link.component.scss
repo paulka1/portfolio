@@ -1,13 +1,11 @@
 @import "../../../styles.scss";
 
-.tabel {
-  margin: 30px;
+h1{
+  margin-bottom: 30px;
 }
-
 .ab_link_container {
   background-color: black;
   border-radius: 15px;
-
   .ab_link.first{
     background-color: rgba(20, 20, 20, 0.2);
     display: flex;
@@ -19,7 +17,7 @@
     background-color: rgba(20, 20, 20, 0.2);
     display: flex;
     flex-direction: column;
-    padding: 0 30px 30px 30px;
+    padding: 0 30px 0 30px;
 
     .ab_link_line {
       margin: 0;
@@ -61,8 +59,13 @@
       }
     }
 
+    .ab_link_image_imdb{
+      width: 40px!important;
+    }
+
     .ab_link_key {
       color: rgb(214, 191, 85);
+      margin-left: 25px;
     }
 
     .ab_link_semicolon{
@@ -71,8 +74,8 @@
     }
 
     .ab_link_text {
+      color: rgb(41, 153, 153);
       a {
-        //text-decoration: inherit;
         color: rgb(41, 153, 153);
       }
     }
