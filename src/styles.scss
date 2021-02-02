@@ -190,4 +190,13 @@ html {
       padding-bottom: 100px;
     }
   }
+
+  /* On screens that are 600px or less*/
+  @media only screen and (max-width: 600px) {
+    .title_section {
+      font-size: 65px;
+      text-align: center;
+      padding-bottom: 100px;
+    }
+  }
 }

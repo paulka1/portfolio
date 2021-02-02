@@ -1,12 +1,14 @@
 @import "../../../styles.scss";
 
-h1{
+h1 {
   margin-bottom: 30px;
 }
+
 .ab_link_container {
   background-color: black;
   border-radius: 15px;
-  .ab_link.first{
+
+  .ab_link.first {
     background-color: rgba(20, 20, 20, 0.2);
     display: flex;
     flex-direction: column;
@@ -59,8 +61,8 @@ h1{
       }
     }
 
-    .ab_link_image_imdb{
-      width: 40px!important;
+    .ab_link_image_imdb {
+      width: 40px !important;
     }
 
     .ab_link_key {
@@ -68,13 +70,14 @@ h1{
       margin-left: 25px;
     }
 
-    .ab_link_semicolon{
+    .ab_link_semicolon {
       color: $greyColor;
       margin-left: 5px;
     }
 
     .ab_link_text {
       color: rgb(41, 153, 153);
+
       a {
         color: rgb(41, 153, 153);
       }
@@ -82,6 +85,18 @@ h1{
   }
 }
 
+@media only screen and (max-width: 600px) {
+  h1 {
+    text-align: center;
+  }
+  .ab_link {
+    font-size: 13px;
+
+    .ab_link_key {
+      margin-left: 10px !important;
+    }
+  }
+}
 
 //1 blue : rgb(83,148,236)
 //2 red: rgb(255,107,104)

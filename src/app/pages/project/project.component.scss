@@ -14,7 +14,7 @@
 
     .title_section {
       //color: $yellowColor;
-      color: rgb(177,177,182);
+      background-color: rgb(41, 153, 153);
     }
   }
   .ligne1 {
@@ -26,19 +26,30 @@
     .bloc_project {
       height: 500px;
       width: 500px;
-      background-color: $yellowColor;
-      //background-image: url("../../../assets/img/spirit1.png");
+      background-color: black;
+      display: flex;
+      justify-content: center;
+      .prj_bmw{
+        width: 90%;
+      }
     }
+    //.bloc_project.bmw {
+    //  height: 500px;
+    //  width: 500px;
+    //  background-color: black;
+    //  background-image: url("../../../assets/img/bmw.svg");
+    //}
   }
 
   .ligne2 {
     display: flex;
     justify-content: space-evenly;
+    margin-bottom: 10px;
 
     .bloc_project {
       height: 500px;
       width: 500px;
-      background-color: $yellowColor;
+      background-color: black;
     }
   }
 
@@ -63,6 +74,23 @@
         height: 500px;
         width: 500px;
         margin-bottom: 10px;
+      }
+    }
+  }
+
+  /* On screens that are 600px or less*/
+  @media only screen and (max-width: 600px) {
+
+    .ligne1 {
+
+      .bloc_project {
+        width: 100%;
+      }
+    }
+    .ligne2 {
+
+      .bloc_project {
+        width: 100%;
       }
     }
   }
