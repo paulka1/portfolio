@@ -14,9 +14,10 @@
 
     .title_section {
       //color: $yellowColor;
-      background-color: rgb(41, 153, 153);
+      background-color: $blueGreen;
     }
   }
+
   .ligne1 {
 
     display: flex;
@@ -29,10 +30,19 @@
       background-color: black;
       display: flex;
       justify-content: center;
-      .prj_bmw{
+
+      img {
+        cursor: pointer;
+      }
+
+      .prj_bmw {
         width: 90%;
       }
+      .prj_bmw:hover{
+        opacity: 0.2;
+      }
     }
+
     //.bloc_project.bmw {
     //  height: 500px;
     //  width: 500px;
@@ -60,16 +70,19 @@
       display: flex;
       flex-direction: column;
       align-items: center;
+
       .bloc_project {
         height: 500px;
         width: 500px;
         margin-bottom: 10px;
+
       }
     }
     .ligne2 {
       display: flex;
       flex-direction: column;
       align-items: center;
+
       .bloc_project {
         height: 500px;
         width: 500px;
@@ -96,7 +109,7 @@
   }
 
 
-    //@media screen and (min-width: 576px) {}
+  //@media screen and (min-width: 576px) {}
 
   //.bloc_project{
   //  border-radius: 50%;

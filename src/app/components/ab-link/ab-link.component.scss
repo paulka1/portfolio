@@ -31,7 +31,7 @@ h1 {
     }
 
     .ab_link_let {
-      color: rgb(41, 153, 153);
+      color: $blueGreen;
       margin-right: 10px;
     }
 
@@ -41,7 +41,7 @@ h1 {
     }
 
     .ab_link_equal {
-      color: rgb(41, 153, 153);
+      color: $blueGreen;
       margin-right: 5px;
     }
 
@@ -50,7 +50,7 @@ h1 {
     }
 
     .ab_link_quote_mark {
-      color: rgb(214, 191, 85);
+      color: $yellowColor1;
     }
 
     .ab_link_img {
@@ -66,7 +66,7 @@ h1 {
     }
 
     .ab_link_key {
-      color: rgb(214, 191, 85);
+      color: $yellowColor1;
       margin-left: 25px;
     }
 
@@ -76,10 +76,10 @@ h1 {
     }
 
     .ab_link_text {
-      color: rgb(41, 153, 153);
+      color: $blueGreen;
 
       a {
-        color: rgb(41, 153, 153);
+        color: $blueGreen;
       }
     }
   }

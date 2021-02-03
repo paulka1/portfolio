@@ -1,0 +1,13 @@
+@import '../../../styles.scss';
+
+.footer_container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background-color: $blueGreen;
+  height: 80px;
+  align-items: center;
+  p{
+    font-size: 20px;
+  }
+}

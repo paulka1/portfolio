@@ -14,6 +14,8 @@ import { AbExperienceComponent } from './components/ab-experience/ab-experience.
 import { ProjectComponent } from './pages/project/project.component';
 import { ContactComponent } from './pages/contact/contact.component';
 import { AbLinkComponent } from './components/ab-link/ab-link.component';
+import { PrjBmwComponent } from './pages/prj-bmw/prj-bmw.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +28,9 @@ import { AbLinkComponent } from './components/ab-link/ab-link.component';
     AbExperienceComponent,
     ProjectComponent,
     ContactComponent,
-    AbLinkComponent
+    AbLinkComponent,
+    PrjBmwComponent,
+    FooterComponent
     ],
   imports: [
     BrowserModule,
