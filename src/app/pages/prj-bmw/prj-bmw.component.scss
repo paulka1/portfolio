@@ -1,5 +1,30 @@
 @import '../../../styles.scss';
 
+#prj_bmw_container{
+  #bmw_film{
+    width: 60%;
+  }
+  .prj_header{
+    height: 100px;
+    background-color: $blueGreen;
+
+    a{
+      color: white;
+    }
+    //.navbar-nav{
+    //  margin:auto;
+    //  .nav-item {
+    //    margin: 0 50px;
+    //    font-size: 30px;
+    //
+    //    .nav-link{
+    //      color: #ffffff;
+    //    }
+    //  }
+    //}
+  }
+}
+
 #main_header {
   .custom-toggler.navbar-toggler {
     border-color: rgb(3, 3, 3);
@@ -13,7 +38,6 @@
   .navbar {
     display: flex;
     flex-direction: column;
-    position: absolute;
     z-index: 1;
     width: 100%;
 
@@ -73,7 +97,4 @@
     font-size: 40px;
   }
 
-  #myVideo {
-    width: 100%;
-  }
 }
