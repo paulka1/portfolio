@@ -5,9 +5,14 @@
   flex-direction: row;
   justify-content: space-around;
   background-color: $blueGreen;
-  height: 150px;
+  height: 95px;
   align-items: center;
+  color: black;
   p{
     font-size: 20px;
+    margin: inherit;
+  }
+  img{
+    width: 35px;
   }
 }
