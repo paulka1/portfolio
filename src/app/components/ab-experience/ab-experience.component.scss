@@ -78,7 +78,7 @@
 @media screen and (max-width: 1000px) {
 
   .job_exp {
-    justify-content: center
+    justify-content: center;
   }
   .school_exp_line_1 {
     margin: auto;
@@ -99,6 +99,7 @@
       .job_exp {
         display: flex;
         flex-direction: column;
+        align-items: center;
       }
       .school_exp{
         .school_exp_line_1 {

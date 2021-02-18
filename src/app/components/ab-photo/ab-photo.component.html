@@ -1,16 +1,13 @@
 <div class="main_photo">
-  
-  <!-- <div class="exemple">
 
-  </div> -->
-  <!-- <span #tref>I am span</span>
+  <img *ngIf="image1" src="../../../assets/img/moi2Re.jpg" alt="paul">
+  <img *ngIf="image2" src="../../../assets/img/moiRe.jpg" alt="paul">
 
-  <div id="frame">
-    coucoucoucoucocu
-  </div> -->
-  <img *ngIf="image1" src={{this.images[0]}} alt="paul"> 
-  <img *ngIf="image2" src={{this.images[1]}} alt="paul"> 
-
-  <img *ngIf="image3" src={{this.images[2]}} alt="paul"> 
+  <ng-container *ngIf="image3">
+    <video autoplay muted loop id="ab_animation" oncanplay="this.play()" onloadedmetadata="this.muted = true">
+      <source src="../../../assets/img/ordinateur.mp4" type="video/mp4">
+    </video>
+  </ng-container>
 
 </div>
+

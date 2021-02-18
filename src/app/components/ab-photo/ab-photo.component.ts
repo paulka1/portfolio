@@ -1,6 +1,7 @@
-import { Component, OnInit, ViewChild, ElementRef, Renderer2 } from '@angular/core';
-import { gsap } from 'gsap';
-import { ScrollTrigger } from 'gsap/ScrollTrigger';
+import {Component, OnInit, ViewChild, ElementRef, HostListener} from '@angular/core';
+import {gsap} from 'gsap';
+import {ScrollTrigger} from 'gsap/ScrollTrigger';
+import {BehaviorSubject} from 'rxjs';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -11,68 +12,84 @@ gsap.registerPlugin(ScrollTrigger);
 })
 
 export class AbPhotoComponent implements OnInit {
-  @ViewChild('frame', {read: ElementRef}) frame: ElementRef
-  constructor() { 
+  image1: boolean;
+  image2: boolean;
+  image3: boolean;
+
+  constructor() {
+    this.image1 = true;
+    this.image2 = false;
+    this.image3 = false;
   }
 
-  image1:boolean
-  image2:boolean
-  image3:boolean
 
-  images = ["http://dummyimage.com/300x300/000000/fff",
-              "http://dummyimage.com/300x300/ffcc00/000",
-              "http://dummyimage.com/300x300/ff0000/000",
-              "http://dummyimage.com/300x300/ff00cc/000",
-              "http://dummyimage.com/300x300/ccff00/000"];
+  @HostListener('window:scroll', ['$event']) getScrollHeight(event) {
+    if(window.pageYOffset < 2800){
+      this.image1 = true;
+      this.image2 = false;
+      this.image3 = false;
+    }
+    if(window.pageYOffset > 2800 && window.pageYOffset < 4000){
+      this.image1 = false;
+      this.image2 = true;
+      this.image3 = false;
+    }
+    if(window.pageYOffset > 4000){
+      this.image1 = false;
+      this.image2 = false;
+      this.image3 = true;
+    }
+  }
 
-  ngAfterViewInit(): void {
-    // outputs `I am span`
-    // console.log(this.main_photo);
-    // console.log(this.frame.nativeElement);
-
-    // console.log(this.tref.nativeElement.textContent);
-
-    // console.log(this.frame.nativeElement.textContent, "works");
-}
-
-// @HostListener('window:scroll', ['$event']) // for window scroll events
-// onScroll(event) {
-//       console.log(event)
-
-// }
-
+  // @HostListener('window:scroll') onScroll(e: Event): void {
+  //   console.log("scrool", this.getYPosition(e));
+  // }
+  //
+  // getYPosition(e: Event): number {
+  //   return (e.target as Element).scrollTop;
+  // }
 
   ngOnInit(): void {
-      this.image1 = true;
-    // gsap.to('#frame', {
-    //   scrollTrigger : {
-    //     trigger: '#hello_presentation',
-    //     toggleActions: "restart none none pause",
-        
-    //   },
-    //   x:+400,
-    //   duration:2
+
+    // ScrollTrigger.create({
+    //   trigger:'.experience_about',
+    //   onUpdate:()=> {
+    //     console.log("photo1");
+    //     this.image1 = !this.image1
+    //   }
+    // });
+    // ScrollTrigger.create({
+    //   trigger:'.link_about',
+    //   onUpdate:()=>{
+    //     console.log("photo2");
+    //     this.image2 = !this.image2
+    //   }
     // });
 
-  //   $(document).ready(function () {
-  //     this.switchImage();
-  // });
-  
-  // $(window).scroll(function () {
-  //     this.switchImage();
-  // });
+    // ScrollTrigger.create({
+    //   trigger:'.link_about',
+    //   onUpdate:()=>console.log("VASSSSSSSS"),
+    //   markers:true
+    // });
+    //   $(document).ready(function () {
+    //     this.switchImage();
+    // });
+
+    // $(window).scroll(function () {
+    //     this.switchImage();
+    // });
 
     // let sections = gsap.utils.toArray(".panel");
 
     // gsap.to(sections, {
-    //   xPercent: -100 * (sections.length - 1), 
+    //   xPercent: -100 * (sections.length - 1),
     //   ease: "none",
     //   scrollTrigger: {
     //     trigger:".main_photo",
     //     pin:true,
     //     scrub:1,
     //     snap:1/(sections.length-1),
-    //     end: () => "+=" + 
+    //     end: () => "+=" +
     //     document.querySelector("#frame")
     //   }
     // })

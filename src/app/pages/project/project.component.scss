@@ -75,7 +75,7 @@
         height: 500px;
         width: 500px;
         margin-bottom: 10px;
-
+        margin-top: 40px;
       }
     }
     .ligne2 {
@@ -86,7 +86,8 @@
       .bloc_project {
         height: 500px;
         width: 500px;
-        margin-bottom: 10px;
+        margin-top: 40px;
+        margin-bottom: 40px;
       }
     }
   }
@@ -97,13 +98,16 @@
     .ligne1 {
 
       .bloc_project {
-        width: 100%;
+        width: 80%;
+        margin-top: 40px;
       }
     }
     .ligne2 {
 
       .bloc_project {
-        width: 100%;
+        width: 80%;
+        margin-top: 40px;
+        margin-bottom: 40px;
       }
     }
   }
