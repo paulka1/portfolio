@@ -1,0 +1,43 @@
+@import '../../../styles.scss';
+
+#prj_soregies_container {
+
+  .prj_header {
+    height: 350px;
+    background-color: $blueGreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    h1 {
+      font-size: 150px;
+      text-align: center;
+      color: black;
+    }
+
+    a {
+      color: white;
+      cursor: pointer;
+    }
+
+    .navbar-nav {
+      margin: auto;
+
+      .nav-item {
+        margin: 0 50px;
+        font-size: 30px;
+
+        .nav-link {
+          color: #ffffff;
+        }
+      }
+    }
+  }
+  .prj_content{
+    h1{
+      text-align: center;
+      font-size: 100px;
+      background: lightgray;
+    }
+  }
+}

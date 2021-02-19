@@ -24,12 +24,12 @@ export class AbPhotoComponent implements OnInit {
 
 
   @HostListener('window:scroll', ['$event']) getScrollHeight(event) {
-    if(window.pageYOffset < 2800){
+    if(window.pageYOffset < 3200){
       this.image1 = true;
       this.image2 = false;
       this.image3 = false;
     }
-    if(window.pageYOffset > 2800 && window.pageYOffset < 4000){
+    if(window.pageYOffset > 3200 && window.pageYOffset < 4000){
       this.image1 = false;
       this.image2 = true;
       this.image3 = false;

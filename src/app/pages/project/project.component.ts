@@ -18,8 +18,12 @@ export class ProjectComponent implements OnInit {
 
   }
 
-  navigateTo() {
+  navigateToProject1() {
     this.router.navigate(['/prj_bmw']);
+  }
+
+  navigateToProject2() {
+    this.router.navigate(['/prj_soregies']);
   }
 }
 
