@@ -41,6 +41,9 @@
       .prj_bmw:hover{
         opacity: 0.2;
       }
+      .prj_soregies:hover{
+        opacity: 0.2;
+      }
     }
 
     //.bloc_project.bmw {
@@ -59,7 +62,17 @@
     .bloc_project {
       height: 500px;
       width: 500px;
-      background-color: black;
+      background-color: white;
+      box-shadow: 0 1px 20px rgb($greyColor, 0.5);
+
+      .pjr_wip{
+        width: 500px;
+        cursor: pointer;
+      }
+
+      .pjr_wip:hover{
+        opacity: 0.2;
+      }
     }
   }
 

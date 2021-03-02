@@ -1,7 +1,13 @@
 <div class="main_photo">
 
   <img *ngIf="image1" src="../../../assets/img/moi2Re.jpg" alt="paul">
-  <img *ngIf="image2" src="../../../assets/img/moiRe.jpg" alt="paul">
+<!--  <img *ngIf="image2" src="../../../assets/img/moiRe.jpg" alt="paul">-->
+
+  <ng-container *ngIf="image2">
+    <video autoplay muted loop id="ab_animation1" oncanplay="this.play()" onloadedmetadata="this.muted = true">
+      <source src="../../../assets/img/dessin3.mp4" type="video/mp4">
+    </video>
+  </ng-container>
 
   <ng-container *ngIf="image3">
     <video autoplay muted loop id="ab_animation" oncanplay="this.play()" onloadedmetadata="this.muted = true">
