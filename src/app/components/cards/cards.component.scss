@@ -1,0 +1,27 @@
+@import "../../../styles.scss";
+
+.company_card {
+  width: 235px;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0 1px 20px rgb($greyColor, 0.5);
+  padding: 30px;
+  justify-content: space-between;
+  height: 365px;
+
+  .company_img {
+    width: 100px;
+    margin: 3px;
+  }
+
+  .company_link {
+    color: rgb($greyColor, 0.8);
+  }
+
+  p {
+    text-align: center;
+  }
+}

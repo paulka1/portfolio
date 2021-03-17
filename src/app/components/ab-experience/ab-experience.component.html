@@ -5,74 +5,64 @@
   <div class="job_school_content">
     <div class="job_exp">
 
-      <div class="company_card">
-        <p class="company_name">IORGA</p>
-        <img src="../../../assets/img/iorga.png" alt="iorga">
-        <p>Apprenti Ingénieur Recherche & Développement</p>
-        <a href="http://iorga.com/"
-           class="company_link"
-           target="_blank">@Je_Veux_En_Savoir_+</a>
-        <p>depuis Mars 2020</p>
-      </div>
+      <app-cards
+        [titleCard]="'IORGA'"
+        [titleJob]="'Apprenti Ingénieur Recherche & Développement'"
+        [imgAlt]="'iorga'"
+        [imgSrc]="'../../../assets/img/iorga.png'"
+        [href]="'https://www.bgs-associes.com/'"
+        [date]="'depuis Mars 2020'"></app-cards>
 
-      <div class="company_card">
-        <p class="company_name">BGS</p>
-        <img src="../../../assets/img/bgs.jpeg" alt="bgs">
-        <p>Stage</p>
-        <a href="https://www.bgs-associes.com/"
-           class="company_link"
-           target="_blank">@Je_Veux_En_Savoir_+</a>
-        <p>Août 2019 - Déc 2019</p>
-      </div>
+      <app-cards
+        [titleCard]="'BGS'"
+        [titleJob]="'Stage'"
+        [imgAlt]="'bgsAssocié'"
+        [imgSrc]="'../../../assets/img/bgs.jpeg'"
+        [href]="'http://iorga.com/'"
+        [date]="'Août 2019 - Déc 2019'"></app-cards>
 
     </div>
     <div class="school_exp">
       <h1>Formations</h1>
       <div class="school_exp_line_1">
 
-        <div class="company_card">
-          <p class="company_name">INTECH</p>
-          <img src="../../../assets/img/intech.png" alt="intech info">
-          <p>Ingénieur Logiciel</p>
-          <a href="https://www.bgs-associes.com/"
-             class="company_link"
-             target="_blank">@Je_Veux_En_Savoir_+</a>
-          <p>Depuis Mars 2020</p>
-        </div>
+        <app-cards
+          [titleCard]="'INTECH'"
+          [titleJob]="'Ingénieur Logiciel'"
+          [imgAlt]="'intech info'"
+          [imgSrc]="'../../../assets/img/intech.png'"
+          [href]="'https://www.intechinfo.fr/'"
+          [date]="'Depuis Mars 2020'"></app-cards>
 
-        <div class="company_card">
-          <p class="company_name">AWS</p>
-          <img src="../../../assets/img/aws.png" alt="aws">
-          <p>AWS Educate</p>
-          <p>Préparation au Certificat cloud practitioner</p>
-          <a href="https://www.bgs-associes.com/"
-             class="company_link"
-             target="_blank">@Je_Veux_En_Savoir_+</a>
-          <p>Depuis Mars 2020</p>
-        </div>
+        <app-cards
+          [titleCard]="'AWS'"
+          [titleJob]="'AWS Educate'"
+          [imgAlt]="'aws'"
+          [text]="'Préparation au Certificat cloud practitioner'"
+          [imgSrc]="'../../../assets/img/aws.png'"
+          [href]="'https://aws.amazon.com/fr/education/awseducate/'"
+          [date]="'Depuis Mars 2020'"></app-cards>
+
       </div>
 
       <div class="school_exp_line_2">
 
-        <div class="company_card">
-          <p class="company_name">WCS</p>
-          <img src="../../../assets/img/wildcodeschool.jpg" alt="wild code school">
-          <p>Titre Développeur web et web mobile</p>
-          <a href="https://www.bgs-associes.com/"
-             class="company_link"
-             target="_blank">@Je_Veux_En_Savoir_+</a>
-          <p>2019</p>
-        </div>
+        <app-cards
+          [titleCard]="'WCS'"
+          [titleJob]="'Titre Développeur web et web mobile'"
+          [imgAlt]="'Titre Développeur web et web mobile'"
+          [imgSrc]="'../../../assets/img/wildcodeschool.jpg'"
+          [href]="'https://www.wildcodeschool.com/fr-FR'"
+          [date]="'2019'"></app-cards>
 
-        <div class="company_card">
-          <p class="company_name">ESRA</p>
-          <img src="../../../assets/img/esra.png" alt="esra">
-          <p>Technicien supérieur de l'image</p>
-          <a href="https://www.bgs-associes.com/"
-             class="company_link"
-             target="_blank">@Je_Veux_En_Savoir_+</a>
-          <p>2010 - 2013</p>
-        </div>
+        <app-cards
+          [titleCard]="'ESRA'"
+          [titleJob]="'Technicien supérieur de l\'image'"
+          [imgAlt]="'esra'"
+          [imgSrc]="'../../../assets/img/esra.png'"
+          [href]="'https://www.esra.edu/'"
+          [date]="'2010 - 2013'"></app-cards>
+
       </div>
     </div>
   </div>
