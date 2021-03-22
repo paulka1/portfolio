@@ -25,13 +25,27 @@
       background-image: -moz-linear-gradient(-45deg, rgba(255,255,220,.3) 0%, transparent 100%);
       background-image: -o-linear-gradient(-45deg, rgba(255,255,220,.3) 0%, transparent 100%);
       background-image: -ms-linear-gradient(-45deg, rgba(255,255,220,.3) 0%, transparent 100%);
-      p{
+      #logo_header_nom{
         text-align: center;
         background-color:rgba(20, 20, 20, 0.4);
         font-size: 80px;
         color: #ffffff;
         font-weight: bold;
         margin-bottom: 0;
+      }
+      .logo_header_slogan_div{
+        display: flex;
+        justify-content: space-between;
+        background-color:rgba(20, 20, 20, 0.4);
+
+      .logo_header_slogan{
+        text-align: center;
+        font-size: 30px;
+        color: #ffffff;
+        font-weight: bold;
+        margin-bottom: 0;
+        text-transform: uppercase;
+      }
       }
     }
 
