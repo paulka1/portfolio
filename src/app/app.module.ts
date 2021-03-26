@@ -18,6 +18,7 @@ import { PrjBmwComponent } from './pages/prj-bmw/prj-bmw.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { PrjSoregiesComponent } from './pages/prj-soregies/prj-soregies.component';
 import { CardsComponent } from './components/cards/cards.component';
+import { AbCompetenceComponent } from './components/ab-competence/ab-competence.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { CardsComponent } from './components/cards/cards.component';
     PrjBmwComponent,
     FooterComponent,
     PrjSoregiesComponent,
-    CardsComponent
+    CardsComponent,
+    AbCompetenceComponent
     ],
   imports: [
     BrowserModule,
