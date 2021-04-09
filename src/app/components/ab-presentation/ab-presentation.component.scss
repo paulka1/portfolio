@@ -1,5 +1,21 @@
 @import '../../../styles.scss';
 
-.main_presentation{
+.main_presentation {
+  .ab_presentation_curiosity_div {
+    display: flex;
+    justify-content: center;
 
+    .ab_presentation_img_curiosity {
+      width: 70px;
+    }
+  }
+
+  .ab_presentation_idee_div {
+    display: flex;
+    justify-content: center;
+
+    .ab_presentation_img_idee {
+      width: 70px;
+    }
+  }
 }

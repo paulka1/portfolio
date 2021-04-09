@@ -1,3 +1,22 @@
-img{
-  width: 200px;
+@import "../../../styles.scss";
+
+.main_competences {
+  .ab_competences_content {
+    border-radius: 10px;
+    box-shadow: 0 1px 20px rgb($greyColor, 0.5);
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+
+    .ab_competences_content_image{
+      width: 40%;
+      img {
+        width: 180px;
+      }
+    }
+
+    .ab_competences_content_list{
+        width: 60%;
+    }
+  }
 }
