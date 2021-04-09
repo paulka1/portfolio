@@ -1,0 +1,19 @@
+@import "../../../styles.scss";
+
+.ab_competences_techno{
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  width: auto;
+  .ab_competences_techno_logo {
+    width: 50px;
+  }
+  .ab_competences_techno_article {
+    width: 50px;
+  }
+  p {
+    font-size: 20px;
+    margin: auto 50px;
+    font-weight: bold;
+  }
+}
