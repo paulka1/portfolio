@@ -1,0 +1,21 @@
+@import '../../../styles.scss';
+
+#ab_angular_container{
+
+  .ab_angular_title {
+      text-align: center;
+      font-size: 100px;
+      background: lightgray;
+  }
+  .ab_angular_image{
+    #ab_angular_image_competence{
+      width: 400px;
+    }
+    #ab_angular_image_icon{
+      width: 300px;
+    }
+  }
+  .ab_angular_content{
+    padding:50px;
+  }
+}
