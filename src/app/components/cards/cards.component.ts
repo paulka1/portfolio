@@ -12,7 +12,7 @@ export class CardsComponent {
 @Input() titleJob;
 @Input() text;
 @Input() href;
-@Input() date;
+@Input() date?;
   constructor() { }
 
 }

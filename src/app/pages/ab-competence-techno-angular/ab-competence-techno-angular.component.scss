@@ -8,14 +8,24 @@
       background: lightgray;
   }
   .ab_angular_image{
-    #ab_angular_image_competence{
-      width: 400px;
-    }
+    display: flex;
+    justify-content: center;
     #ab_angular_image_icon{
       width: 300px;
     }
   }
   .ab_angular_content{
     padding:50px;
+    .ab_angular_content_presentation{
+      display: flex;
+    }
+    .ab_angular_content_evolution{
+      display: flex;
+      .ab_angular_evolution_image{
+        #ab_angular_image_competence{
+          width: 200px;
+        }
+      }
+    }
   }
 }
