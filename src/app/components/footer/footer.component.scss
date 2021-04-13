@@ -1,6 +1,6 @@
 @import '../../../styles.scss';
 
-.footer_container{
+.footer_container {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -8,11 +8,37 @@
   height: 95px;
   align-items: center;
   color: black;
-  p{
+
+  p {
     font-size: 20px;
     margin: inherit;
   }
-  img{
+
+  img {
     width: 35px;
+  }
+
+}
+
+@media screen and (max-width: 1000px) {
+  //.footer_container {
+  //  display: flex !important;
+  //  flex-direction: column !important;
+  //}
+}
+
+/* On screens that are 600px or less*/
+@media only screen and (max-width: 600px) {
+  .footer_container {
+    display: flex !important;
+    flex-direction: column !important;
+    height: auto;
+  }
+  p {
+    padding: 5px;
+  }
+  img {
+    width: 50px!important;
+    padding: 5px;
   }
 }
