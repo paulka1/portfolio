@@ -5,47 +5,52 @@
     border-color: rgb(3, 3, 3);
     border-width: 2px;
   }
+
   .custom-toggler .navbar-toggler-icon {
     background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0,0,0)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
   }
+
   .navbar {
     display: flex;
     flex-direction: column;
     position: absolute;
     z-index: 1;
     width: 100%;
+
     a {
       margin: 0;
     }
 
-    #logo_header{
+    #logo_header {
       width: 70%;
-      box-shadow: inset -25px -25px 40px rgba(0,0,0,.5);
-      background-image: -webkit-linear-gradient(-45deg, rgba(255,255,220,.3) 0%, transparent 100%);
-      background-image: -moz-linear-gradient(-45deg, rgba(255,255,220,.3) 0%, transparent 100%);
-      background-image: -o-linear-gradient(-45deg, rgba(255,255,220,.3) 0%, transparent 100%);
-      background-image: -ms-linear-gradient(-45deg, rgba(255,255,220,.3) 0%, transparent 100%);
-      #logo_header_nom{
+      box-shadow: inset -25px -25px 40px rgba(0, 0, 0, .5);
+      background-image: -webkit-linear-gradient(-45deg, rgba(255, 255, 220, .3) 0%, transparent 100%);
+      background-image: -moz-linear-gradient(-45deg, rgba(255, 255, 220, .3) 0%, transparent 100%);
+      background-image: -o-linear-gradient(-45deg, rgba(255, 255, 220, .3) 0%, transparent 100%);
+      background-image: -ms-linear-gradient(-45deg, rgba(255, 255, 220, .3) 0%, transparent 100%);
+
+      #logo_header_nom {
         text-align: center;
-        background-color:rgba(20, 20, 20, 0.4);
+        background-color: rgba(20, 20, 20, 0.4);
         font-size: 80px;
         color: #ffffff;
         font-weight: bold;
         margin-bottom: 0;
       }
-      .logo_header_slogan_div{
+
+      .logo_header_slogan_div {
         display: flex;
         justify-content: space-between;
-        background-color:rgba(20, 20, 20, 0.4);
+        background-color: rgba(20, 20, 20, 0.4);
 
-      .logo_header_slogan{
-        text-align: center;
-        font-size: 30px;
-        color: #ffffff;
-        font-weight: bold;
-        margin-bottom: 0;
-        text-transform: uppercase;
-      }
+        .logo_header_slogan {
+          text-align: center;
+          font-size: 30px;
+          color: #ffffff;
+          font-weight: bold;
+          margin-bottom: 0;
+          text-transform: uppercase;
+        }
       }
     }
 
@@ -56,20 +61,22 @@
 
     #navbarSupportedContent {
       width: 70%;
-      background-color:rgb(41, 153, 153,0.7);
+      background-color: rgb(41, 153, 153, 0.7);
       line-height: 30px;
-      box-shadow: inset -25px -25px 40px rgba(0,0,0,.5);
+      box-shadow: inset -25px -25px 40px rgba(0, 0, 0, .5);
       background-image: -webkit-linear-gradient(-45deg, $greyColor 0%, transparent 100%);
       background-image: -moz-linear-gradient(-45deg, $greyColor 0%, transparent 100%);
       background-image: -o-linear-gradient(-45deg, $greyColor 0%, transparent 100%);
       background-image: -ms-linear-gradient(-45deg, $greyColor 0%, transparent 100%);
-      .navbar-nav{
-        margin:auto;
+
+      .navbar-nav {
+        margin: auto;
+
         .nav-item {
           margin: 0 50px;
           font-size: 30px;
 
-          .nav-link{
+          .nav-link {
             color: #ffffff;
           }
         }
@@ -86,22 +93,22 @@
   }
 
   /* On screens that are 992px or less */
-@media only screen and (max-width: 992px) {
-  #logo_header{
-    p{
-      font-size: 85px!important;
-      margin-bottom: 10px!important;
+  @media only screen and (max-width: 992px) {
+    #logo_header {
+      p {
+        font-size: 85px !important;
+        margin-bottom: 10px !important;
+      }
     }
   }
-}
 
-/* On screens that are 600px or less*/
-@media only screen and (max-width: 600px) {
-  #logo_header{
-    p{
-      font-size: 35px!important;
-      margin-bottom: 10px!important;
+  /* On screens that are 600px or less*/
+  @media only screen and (max-width: 600px) {
+    #logo_header {
+      p {
+        font-size: 35px !important;
+        margin-bottom: 10px !important;
+      }
     }
   }
-}
 }
