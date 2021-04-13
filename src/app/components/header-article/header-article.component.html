@@ -1,0 +1,40 @@
+<div class="main_header">
+  <h1>{{title}}</h1>
+
+  <!-- HEADER Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+    <div id="logo_header">
+    </div>
+    <button class="navbar-toggler custom-toggler"
+            type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" (click)="navigateToProject('')">Home</a>
+        </li>
+        <ng-container *ngIf="article1">
+          <li class="nav-item">
+            <a class="nav-link" (click)="navigateToProject(article1)">{{article1}}</a>
+          </li>
+        </ng-container>
+        <ng-container *ngIf="article2">
+          <li class="nav-item">
+            <a class="nav-link" (click)="navigateToProject(article1)">{{article2}}</a>
+          </li>
+        </ng-container>
+        <ng-container *ngIf="article3">
+          <li class="nav-item">
+            <a class="nav-link" (click)="navigateToProject(article1)">{{article3}}</a>
+          </li>
+        </ng-container>
+      </ul>
+    </div>
+  </nav>
+</div>

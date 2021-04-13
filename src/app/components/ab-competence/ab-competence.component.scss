@@ -1,6 +1,10 @@
 @import "../../../styles.scss";
 
 .main_competences {
+  margin-bottom: 30px;
+  h1{
+    margin-bottom: 30px;
+  }
   .ab_competences_content {
     border-radius: 10px;
     box-shadow: 0 1px 20px rgb($greyColor, 0.5);
@@ -15,8 +19,11 @@
       }
     }
 
-    .ab_competences_content_list{
-        width: 60%;
+    .ab_competences_content_list_left{
+        width: 50%;
+    }
+    .ab_competences_content_list_right{
+      width: 50%;
     }
   }
 }

@@ -20,6 +20,8 @@ import { PrjSoregiesComponent } from './pages/prj-soregies/prj-soregies.componen
 import { CardsComponent } from './components/cards/cards.component';
 import { AbCompetenceComponent } from './components/ab-competence/ab-competence.component';
 import { AbCompetenceTechnoComponent } from './components/ab-competence-techno/ab-competence-techno.component';
+import { AbCompetenceTechnoAngularComponent } from './pages/ab-competence-techno-angular/ab-competence-techno-angular.component';
+import { HeaderArticleComponent } from './components/header-article/header-article.component';
 
 @NgModule({
   declarations: [
@@ -38,7 +40,9 @@ import { AbCompetenceTechnoComponent } from './components/ab-competence-techno/a
     PrjSoregiesComponent,
     CardsComponent,
     AbCompetenceComponent,
-    AbCompetenceTechnoComponent
+    AbCompetenceTechnoComponent,
+    AbCompetenceTechnoAngularComponent,
+    HeaderArticleComponent
     ],
   imports: [
     BrowserModule,

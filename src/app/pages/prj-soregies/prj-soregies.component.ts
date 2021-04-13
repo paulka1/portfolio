@@ -1,17 +1,18 @@
-import { Component, OnInit } from '@angular/core';
+import { Component } from '@angular/core';
 import {Router} from '@angular/router';
+import { ProjetEnum } from "../../enum/enum";
 
 @Component({
   selector: 'app-prj-soregies',
   templateUrl: './prj-soregies.component.html',
   styleUrls: ['./prj-soregies.component.scss']
 })
-export class PrjSoregiesComponent implements OnInit {
+export class PrjSoregiesComponent {
+
+  ProjetEnum = ProjetEnum;
 
   constructor(private router: Router) { }
 
-  ngOnInit(): void {
-  }
 
   navigateToHome(){
     this.router.navigate(['/home']);

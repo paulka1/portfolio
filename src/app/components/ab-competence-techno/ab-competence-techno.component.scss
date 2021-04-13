@@ -5,6 +5,7 @@
   flex-direction: row;
   padding: 10px;
   width: auto;
+  align-items: center;
   .ab_competences_techno_logo {
     width: 50px;
   }
@@ -13,7 +14,7 @@
   }
   p {
     font-size: 20px;
-    margin: auto 50px;
+    margin: 0 0 0 30px;
     font-weight: bold;
   }
 }

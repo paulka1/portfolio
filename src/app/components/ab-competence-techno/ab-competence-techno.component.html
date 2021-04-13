@@ -3,7 +3,7 @@
     <img class="ab_competences_techno_logo" src="{{srcLogo}}" alt="{{altLogo}}">
     <p>{{technologie}}</p>
     <ng-container *ngIf="isArticle">
-      <img class="ab_competences_techno_article" src="{{srcLogoArticle}}" alt="article">
+      <img class="ab_competences_techno_article" src="{{srcLogoArticle}}" alt="article" (click)="navigateToProject(technologie)">
     </ng-container>
   </div>
 </div>

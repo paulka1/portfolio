@@ -3,15 +3,15 @@
     <h1>Compétences techniques</h1>
   </div>
   <div class="ab_competences_content">
-    <div class="ab_competences_content_image">
-      <img src="../../../assets/img/imgComptence.png" alt="compétences">
-    </div>
-    <div class="ab_competences_content_list">
+<!--    <div class="ab_competences_content_image">-->
+<!--      <img src="../../../assets/img/imgComptence.png" alt="compétences">-->
+<!--    </div>-->
+    <div class="ab_competences_content_list_left">
       <app-ab-competence-techno
         [srcLogo]="'./assets/img/angular-icon.png'"
-        [technologie]="'Angular'"
+        [technologie]="CompetenceTechniqueEnum.ANGULAR"
         [altLogo]="'Angular'"
-        [isArticle]="false"
+        [isArticle]="true"
         [srcLogoArticle]="'./assets/img/angular-icon.png'"
       ></app-ab-competence-techno>
       <app-ab-competence-techno
@@ -42,6 +42,8 @@
         [isArticle]="false"
         [srcLogoArticle]="'./assets/img/angular-icon.png'"
       ></app-ab-competence-techno>
+    </div>
+    <div class="ab_competences_content_list_right">
       <app-ab-competence-techno
         [srcLogo]="'./assets/img/typescript-icon.png'"
         [technologie]="'Typescript'"
@@ -58,14 +60,14 @@
       ></app-ab-competence-techno>
       <app-ab-competence-techno
         [srcLogo]="'./assets/img/html-icon.png'"
-        [technologie]="'Html/Css'"
+        [technologie]="'Html'"
         [altLogo]="'Javascript'"
         [isArticle]="false"
         [srcLogoArticle]="'./assets/img/angular-icon.png'"
       ></app-ab-competence-techno>
       <app-ab-competence-techno
         [srcLogo]="'./assets/img/css-icon-1.jpeg'"
-        [technologie]="'Html/Css'"
+        [technologie]="'Css'"
         [altLogo]="'Javascript'"
         [isArticle]="false"
         [srcLogoArticle]="'./assets/img/angular-icon.png'"
