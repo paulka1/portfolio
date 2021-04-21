@@ -7,6 +7,7 @@
 
     .ab_presentation_img_curiosity {
       width: 70px;
+      height: 85px;
     }
   }
 
@@ -16,6 +17,7 @@
 
     .ab_presentation_img_idee {
       width: 70px;
+      height: 85px;
     }
   }
 
@@ -25,7 +27,29 @@
 
     .ab_presentation_img_team {
       width: 70px;
+      height: 85px;
+    }
+  }
+}
 
+@media only screen and (max-width: 600px) {
+  .main_presentation {
+    .ab_presentation_curiosity_div {
+      .ab_presentation_img_curiosity {
+        margin: 30px;
+      }
+    }
+
+    .ab_presentation_idee_div {
+      .ab_presentation_img_idee {
+        margin: 30px;
+      }
+    }
+
+    .ab_presentation_team_div {
+      .ab_presentation_img_team {
+        margin: 30px;
+      }
     }
   }
 }

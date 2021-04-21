@@ -119,11 +119,12 @@
     }
   }
   .prj_content_video {
-    display: flex;
-    justify-content: center;
+    //display: flex;
+    //justify-content: center;
+    display: none!important;
 
-    #bmw_film {
-      width: 100% !important;
-    }
+    //#bmw_film {
+    //  width: 100% !important;
+    //}
   }
 }

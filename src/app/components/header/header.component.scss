@@ -45,7 +45,7 @@
 
         .logo_header_slogan {
           text-align: center;
-          font-size: 30px!important;
+          font-size: 30px !important;
           color: #ffffff;
           font-weight: bold;
           margin-bottom: 0;
@@ -78,6 +78,7 @@
 
           .nav-link {
             color: #ffffff;
+            text-align: center;
           }
         }
       }
@@ -88,8 +89,16 @@
     font-size: 40px;
   }
 
-  #myVideo {
-    width: 100%;
+  .text_header_video {
+    #myVideo {
+      width: 100%;
+    }
+  }
+
+  .text_header_image {
+    img {
+      width: 100%;
+    }
   }
 
   /* On screens that are 992px or less */
@@ -109,6 +118,9 @@
         font-size: 35px !important;
         margin-bottom: 10px !important;
       }
+    }
+    .logo_header_slogan_div {
+      display: none !important;
     }
   }
 }

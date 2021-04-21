@@ -2,9 +2,11 @@
 
 .main_competences {
   margin-bottom: 30px;
-  h1{
+
+  h1 {
     margin-bottom: 30px;
   }
+
   .ab_competences_content {
     border-radius: 10px;
     box-shadow: 0 1px 20px rgb($greyColor, 0.5);
@@ -12,18 +14,47 @@
     display: flex;
     flex-direction: row;
 
-    .ab_competences_content_image{
+    .ab_competences_content_image {
       width: 40%;
+
       img {
         width: 180px;
       }
     }
 
-    .ab_competences_content_list_left{
-        width: 50%;
-    }
-    .ab_competences_content_list_right{
+    .ab_competences_content_list_left {
       width: 50%;
+    }
+
+    .ab_competences_content_list_right {
+      width: 50%;
+    }
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .main_competences {
+
+    .ab_competences_content {
+      display: flex;
+      flex-direction: column;
+    }
+    .ab_competences_content_image {
+      width: 40%;
+
+      img {
+        width: 180px;
+      }
+    }
+
+    .ab_competences_content_list_left {
+      margin: auto;
+      width: auto!important;
+    }
+
+    .ab_competences_content_list_right {
+      margin: auto;
+      width: auto!important;
     }
   }
 }

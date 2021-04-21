@@ -33,10 +33,13 @@
   </nav>
 
   <div class="text_header">
-    <div>
+    <div class="text_header_video" *ngIf="!displayHeaderImage">
       <video autoplay muted loop id="myVideo" oncanplay="this.play()" onloadedmetadata="this.muted = true">
         <source src="../../../assets/img/video2.0.m4v" type="video/mp4">
       </video>
+    </div>
+    <div class="text_header_image" *ngIf="displayHeaderImage">
+      <img src="./assets/img/001timelouche1.jpg" alt="image">
     </div>
   </div>
 </div>
