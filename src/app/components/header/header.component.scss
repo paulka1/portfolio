@@ -4,6 +4,7 @@
   .custom-toggler.navbar-toggler {
     border-color: rgb(3, 3, 3);
     border-width: 2px;
+    margin:30px;
   }
 
   .custom-toggler .navbar-toggler-icon {
@@ -121,6 +122,9 @@
     }
     .logo_header_slogan_div {
       display: none !important;
+    }
+    .text_header_image {
+      padding-bottom: 40px;
     }
   }
 }

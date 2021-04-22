@@ -72,6 +72,12 @@
   @media only screen and (max-width: 600px) {
     #content_about {
 
+      .image1 {
+        display: block;
+        margin-bottom: 50px;
+        height: 275px;
+      }
+
       .rightSide_about {
         width: auto;
       }

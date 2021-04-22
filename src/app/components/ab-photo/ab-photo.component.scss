@@ -1,18 +1,18 @@
 @import '../../../styles.scss';
 
-.main_photo{
+.main_photo {
   display: flex;
   margin-bottom: 30px;
   flex-direction: column;
   height: 100%;
 
-  img{
+  img {
     position: -webkit-sticky; /* Safari */
     position: sticky;
-    top:75px;
+    top: 75px;
   }
 
-  video{
+  video {
     position: -webkit-sticky; /* Safari */
     position: sticky;
     top: 75px;
@@ -21,7 +21,9 @@
 }
 
 @media only screen and (max-width: 600px) {
-  .main_photo{
-    height: 450px!important;
+  .main_photo {
+    img {
+      height: 275px !important;
+    }
   }
 }
