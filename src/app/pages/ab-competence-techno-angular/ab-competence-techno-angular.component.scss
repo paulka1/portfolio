@@ -29,3 +29,32 @@
     }
   }
 }
+
+/* On screens that are 600px or less*/
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 75px!important;
+  }
+  .ab_angular_image{
+    #ab_angular_image_icon{
+      width: 200px;
+    }
+  }
+  .ab_angular_content{
+    padding:50px;
+    .ab_angular_content_presentation{
+      display: flex;
+      flex-direction: column;
+    }
+    .ab_angular_content_evolution{
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      .ab_angular_evolution_image{
+        #ab_angular_image_competence{
+          width: 200px;
+        }
+      }
+    }
+  }
+}
