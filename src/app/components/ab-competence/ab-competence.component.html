@@ -1,6 +1,6 @@
 <div class="main_competences">
   <div>
-    <h1>Compétences techniques</h1>
+    <h1 id="anchor-competence">Compétences techniques</h1>
   </div>
   <div class="ab_competences_content">
     <div class="ab_competences_content_list_left">
@@ -20,22 +20,22 @@
       ></app-ab-competence-techno>
       <app-ab-competence-techno
         [srcLogo]="'./assets/img/node-js-icon.jpeg'"
-        [technologie]="'NodeJs'"
-        [altLogo]="'Javascript'"
-        [isArticle]="false"
-        [srcLogoArticle]="'./assets/img/angular-icon.png'"
+        [technologie]="CompetenceTechniqueEnum.NODEJS"
+        [altLogo]="'nodejs'"
+        [isArticle]="true"
+        [srcLogoArticle]="'./assets/img/article.png'"
       ></app-ab-competence-techno>
       <app-ab-competence-techno
         [srcLogo]="'./assets/img/adobe-icon.png'"
-        [technologie]="'Adobe'"
-        [altLogo]="'Javascript'"
-        [isArticle]="false"
-        [srcLogoArticle]="'./assets/img/angular-icon.png'"
+        [technologie]="CompetenceTechniqueEnum.ADOBE"
+        [altLogo]="'adobe'"
+        [isArticle]="true"
+        [srcLogoArticle]="'./assets/img/article.png'"
       ></app-ab-competence-techno>
       <app-ab-competence-techno
         [srcLogo]="'./assets/img/sql-icon.jpeg'"
         [technologie]="'SQL'"
-        [altLogo]="'Javascript'"
+        [altLogo]="'sql'"
         [isArticle]="false"
         [srcLogoArticle]="'./assets/img/angular-icon.png'"
       ></app-ab-competence-techno>

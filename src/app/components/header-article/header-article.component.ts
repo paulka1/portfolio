@@ -28,6 +28,9 @@ export class HeaderArticleComponent {
     case CompetenceTechniqueEnum.ADOBE:
       this.router.navigate(['/article_adobe']);
       break;
+    case CompetenceTechniqueEnum.NODEJS:
+      this.router.navigate(['/article_nodejs']);
+      break;
     case ProjetEnum.SOREGIES:
       this.router.navigate(['/prj_soregies']);
       break;

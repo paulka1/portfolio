@@ -1,0 +1,71 @@
+<div id="ab_nodejs_container">
+  <app-header-article
+    [title]="'TECHNO'"
+    [article1]="CompetenceTechniqueEnum.ANGULAR"
+    [article2]="CompetenceTechniqueEnum.ADOBE"
+  ></app-header-article>
+  <h1 class="ab_nodejs_title">NODEJS</h1>
+  <div class="ab_nodejs_image">
+    <img id="ab_nodejs_image_icon" src="./assets/img/node-js-icon.jpeg" alt="nodejs">
+  </div>
+  <div class="ab_nodejs_content">
+    <div class="ab_nodejs_content_presentation">
+      <div class="ab_nodejs_content_presentation_text">
+        <h4>La technologie Nodejs</h4>
+        <p>
+          NodeJs est un outil libre sortie en 2010 codé en Javascript et orientée pour des applications en réseau. Il s’agit d’une
+          plateforme construite sur le moteur JavaScript V8 de Chrome pour développer rapidement des applications réseau rapides et évolutives.
+          JavaScript est un langage évènementiel, donc Node.js est lui-même basé sur les évènements. Cela lui permet d’être léger et d’avoir des
+          performances de très haut niveau. Node.js n’est ni un serveur ni un framework, il est juste un environnement d’exécution JavaScript
+          pouvant être utilisé pour écrire des services côté serveur appelés API (Application Programming Interface). Il constitue une alternative
+          aux langages serveur comme PHP, Java EE, etc. Cet outil JavaScript est devenu célèbre dans l’univers du développement web depuis quelques
+          années. D’ailleurs, il est très apprécié des géants du web.
+        </p>
+        <p>Je travaille avec NodeJs depuis Mars 2019.</p>
+        <h4>Mes projets</h4>
+        <p>J'ai commencé mon apprentissage de NodeJs en formation où j'ai développé un back-end de site e-commerce avec le framework ExpressJs.
+          ExpressJs est un framework NodeJs pour le développement de serveur.</p>
+        <p>Par la suite durant mon stage en entreprise j'ai développé de A à Z un serveur avec ExpressJs pour un site e-commerce et j'ai collaboré
+          sur une application ionic dont le language serveur était aussi en NodeJs. </p>
+        <p>Au sein de l'entreprise Iorga Group je travaille depuis Mars 2020 sur trois projets dont le projet Soregies présenté sur le site
+          (lien) qui ont utilise la technologie NodeJs pour le côté serveur. J'ai sur ce projet notamment beaucoup travaillé sur l'implémentation
+          de nouvelle requêtes et le traietment de celle-ci.</p>
+      </div>
+      <div class="ab_nodejs_content_presentation_card">
+        <app-cards
+          [titleCard]="'NODEJS'"
+          [titleJob]="'Framework web Typescript'"
+          [imgAlt]="'nodejs'"
+          [href]="'https://nodejs.io/'"
+          [imgSrc]="'./assets/img/node-js-icon.jpeg'"
+        ></app-cards>
+      </div>
+    </div>
+
+    <h4>Entreprise</h4>
+    <p>NodeJs est très utilisé en entreprise et par les développeurs web en général parce qu'il offre des atouts très intéressant.
+      Un de ses gros atout est son multithreading, sa capacité a effectuer plusieurs actions de manière simultanée et non l’une après
+      l’autre comme ce serait le cas avec un modèle bloquant. Ce qui est très apprécié des sites qui demandes bcp de requêtes.
+      NodeJs est souple, il dispose de peu d'options intégrées, le choix est laissé à l'utilisateur d'intégrer les modules dont il a besoin.
+      et ensuite comme il vient du Javascript, c'est un language plutôt simple à appréhender et que bcp de développeur connaisse.
+      Aussi, vous n’êtes plus obligé d’utiliser deux langages pour votre projet, une pour le frontend et une autre pour le backend.
+      En vous permettant de coder les deux parties d’une application web en JavaScript, Node.JS vous évite les éventuels problèmes de
+      raisonnement ou d’écriture. Il est très pratique surtout si vous êtes un développeur Full-stack.</p>
+
+    <div class="ab_nodejs_content_evolution">
+      <div class="ab_nodejs_content_evolution_text">
+        <h4>Evolution</h4>
+        <p>Je suis pleinement dans l'environnement de cette technologie en me formant sur chaque nouvelle version et en suivant la
+          communauté par le biais de conférences ou groupes de dialogues.
+        </p>
+        <p>
+          Mon objectif étant de me perfectionner dans cette technologie.
+        </p>
+      </div>
+      <div class="ab_nodejs_evolution_image">
+        <img id="ab_nodejs_image_competence" src="./assets/img/imgCompetence1.png" alt="compétences">
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

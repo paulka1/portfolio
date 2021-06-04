@@ -4,8 +4,67 @@
     [article1]="ProjetEnum.BMW"
   ></app-header-article>
 
-  <div class="prj_content">
     <h1>SOREGIES</h1>
+  <div class="prj_content">
+
+    <div class="prj_content">
+      <div class="prj_content_company">
+        <div class="prj_content_company_presentation">
+          <h2>Gestion de sa consommation énergétique</h2>
+          <h4>Le contexte</h4>
+          <p>Ce projet a été conduit au sein de l'entreprise Iorga Group.<br>
+            Sorégies est une société locale de distribution d'électricité et de gaz basée à Poitiers. Par son chiffre d'affaires,
+            elle est la première entreprise locale de distribution d'électricité et de gaz en France.</p>
+          <p>Technologies utilsées : Angular / NodeJs.</p>
+          <img src="./assets/img/logo-soregies.svg" alt="soregies">
+          <p>Dans son désir dévolution et l'avénement des compteur connecté la société met en place une plateforme utilisateur de gestion.</p>
+          <p>Je suis intégrée à l'équipe de développement pour la création de la V2.</p>
+        </div>
+        <div class="prj_content_company_presentation_card">
+          <app-cards
+            [titleCard]="'IORGA'"
+            [titleJob]="'Apprenti Ingénieur Recherche & Développement'"
+            [imgAlt]="'iorga'"
+            [imgSrc]="'./assets/img/iorga.png'"
+            [href]="'https://www.bgs-associes.com/'"
+            [date]="'depuis Mars 2020'"></app-cards>
+          <app-cards
+            [titleCard]="'SOREGIES'"
+            [titleJob]="'Fournisseur d\'électricité'"
+            [imgAlt]="'soregies'"
+            [href]="'https://www.soregies.fr/'"
+            [imgSrc]="'./assets/img/logo-soregies.svg'"
+            [date]="''"></app-cards>
+        </div>
+      </div>
+      <div class="prj_content_description">
+        <h4>Les enjeux</h4>
+        <p>Le principal travail du début de projet est l'intégration au sein de l'équipe de développement et la compréhension des régles métier de l'application.
+          Le lexique et la fonctionnalité globale du businnes de l'éléctricité est spécifique et complexe.</p>
+        <p>On opte pour un tableau de tâche et une organisation Agile en sprint court de 1 semaine avec une présentation hebdomadaire avec le client.</p>
+        <h4>Mes tâches</h4>
+        <p>Mon travail consiste à développé la fonctionnalité des objectifs et alerte de consommation.</p>
+        <p>Un objectif de consommataion est la possibilité pour l'utilisateur de comparer sa consommation par rapport à sa propre consommation sur
+          la même periode l'année précédente ou de comparer sa conso par rapport à d'autres utilisateur dans sa zone géographique présentant les
+          mêmes caractéristiques (taille d'appartement, équipement éléctrique, ...) et de décider si il veut avoir pour objectif de diminuer ou
+          augmenter sa conso en pourcentage sur un mois.</p>
+        <p>Les alertes de consommation est la possibilité de recevoir pas mail ou téléphone un message prévenant l'utilisateur le dépassement de
+          son objectif. Par exemple si l'utilisateur à décider de baisser sa conso de 10% par mois par rapport à sa conso de l'année dernière. En
+          admettant qu'il avait consommer 1000 kwh par mois l'année précèdente, si sa conso actuelle dépasse 900 kwh il sera alerté du dépassement
+          de son objectif qui était d'une baisse de 10%.</p>
+        <p>Pour cela je dois metttre un place une interface où l'utilisateur peut activer son objectif. Avec comme possibilité de choisir son type
+          d'objectif, le but à atteindre et les données perosnnelles pour être averti en cas de dépassement de celui-ci.
+          Ensuite je dois développé une interface où l'utilisateur peut visualiser par un graphique où il se situe vis-à-vis de son objectif, avec
+          la possiblité de mettre à jour son objectif et ses données personelles.</p>
+        <p>Et enfin j'ai développé la focntionnalité pour que l'utilisateur soit alerté en cas de dépassement.</p>
+      </div>
+      <div class="prj_content_video">
+        <video autoplay muted loop id="soregies_film" oncanplay="this.play()" onloadedmetadata="this.muted = true">
+          <source src="../../../assets/img/conso_1.mp4" type="video/mp4">
+        </video>
+      </div>
+
+    </div>
   </div>
 </div>
 <app-footer></app-footer>

@@ -11,7 +11,7 @@ export class ContactComponent implements OnInit {
 
   contactForm:FormGroup;
 
-  // Success message email send 
+  // Success message email send
   emailSend:boolean=false;
 
   constructor(
@@ -33,13 +33,11 @@ export class ContactComponent implements OnInit {
   }
 
   onSubmit(){
-    console.log(this.contactForm.value)
     this.contactService.sendEmail(this.contactForm.value).subscribe(
       res => {
         this.emailSend = true;
       }
-      )
-      // this.formInit()
+      );
+    this.formInit()
    }
-  
 }

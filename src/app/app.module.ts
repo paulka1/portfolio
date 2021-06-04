@@ -22,6 +22,8 @@ import { AbCompetenceComponent } from './components/ab-competence/ab-competence.
 import { AbCompetenceTechnoComponent } from './components/ab-competence-techno/ab-competence-techno.component';
 import { AbCompetenceTechnoAngularComponent } from './pages/ab-competence-techno-angular/ab-competence-techno-angular.component';
 import { HeaderArticleComponent } from './components/header-article/header-article.component';
+import { AbCompetenceTechnoAdobeComponent } from './pages/ab-competence-techno-adobe/ab-competence-techno-adobe.component';
+import { AbCompetenceTechnoNodejsComponent } from './pages/ab-competence-techno-nodejs/ab-competence-techno-nodejs.component';
 
 @NgModule({
   declarations: [
@@ -42,7 +44,9 @@ import { HeaderArticleComponent } from './components/header-article/header-artic
     AbCompetenceComponent,
     AbCompetenceTechnoComponent,
     AbCompetenceTechnoAngularComponent,
-    HeaderArticleComponent
+    HeaderArticleComponent,
+    AbCompetenceTechnoAdobeComponent,
+    AbCompetenceTechnoNodejsComponent
     ],
   imports: [
     BrowserModule,

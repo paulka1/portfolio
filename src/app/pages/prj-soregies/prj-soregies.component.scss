@@ -1,7 +1,14 @@
 @import '../../../styles.scss';
 
 #prj_soregies_container {
+  .prj_content_video {
+    display: flex;
+    justify-content: center;
 
+    #soregies_film {
+      width: 60%;
+    }
+  }
   .prj_header {
     height: 350px;
     background-color: $blueGreen;
@@ -33,11 +40,85 @@
       }
     }
   }
+
+  h1{
+    text-align: center;
+    font-size: 100px;
+    background: lightgray;
+  }
+
   .prj_content{
-    h1{
-      text-align: center;
-      font-size: 100px;
-      background: lightgray;
+    padding: 25px;
+
+
+    .prj_content_company {
+      display: flex;
+      flex-direction: row;
+
+      .prj_content_company_presentation {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+
+        h2 {
+          padding-bottom: 35px;
+        }
+
+        img {
+          width: 250px;
+          margin-bottom: 16px;
+        }
+      }
+
+      .prj_content_company_presentation_card {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        width: 50%
+      }
     }
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  h1 {
+    font-size: 115px;
+  }
+
+  .prj_content_company {
+    display: flex;
+    flex-direction: column!important;
+  }
+
+  .prj_content_company_presentation {
+    width: 100% !important;
+  }
+
+  .prj_content_company_presentation_card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100% !important;
+  }
+  .navbar{
+    justify-content: center!important;
+  }
+}
+
+/* On screens that are 600px or less*/
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 100px!important;
+  }
+  .prj_content_company {
+
+    .prj_content_company_presentation_card {
+      display: flex;
+      flex-direction: column!important;
+      align-items: center;
+    }
+  }
+  .prj_content_video {
+    display: none!important;
   }
 }

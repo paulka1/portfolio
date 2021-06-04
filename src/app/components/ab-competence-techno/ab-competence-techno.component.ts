@@ -25,6 +25,10 @@ export class AbCompetenceTechnoComponent {
         break;
       case CompetenceTechniqueEnum.ADOBE:
         this.router.navigate(['/article_adobe']);
+        break;
+      case CompetenceTechniqueEnum.NODEJS:
+        this.router.navigate(['/article_nodejs']);
+        break;
     }
   }
 }
