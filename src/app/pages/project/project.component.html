@@ -5,18 +5,20 @@
   <div class="ligne1">
     <!-- Projet 1 -->
     <div class="bloc_project">
-      <img class="prj_bmw" src="./assets/img/bmw.svg" alt="bmw" (click)="navigateToProject1()">
+      <img class="prj_bmw" src="./assets/img/bmw.svg" alt="bmw"
+           (click)="navigate(ProjetEnum.BMW)">
     </div>
     <!-- Projet 2 -->
     <div class="bloc_project">
       <img class="prj_soregies" src="./assets/img/logo-soregies.svg" alt="soregies"
-           (click)="navigateToProject2()">
+           (click)="navigate(ProjetEnum.SOREGIES)">
     </div>
   </div>
   <div class="ligne2">
     <!-- Projet 3 -->
     <div class="bloc_project">
-      <img class="pjr_wip" src="./assets/img/wip.png" alt="wip">
+      <img class="prj_scout" src="./assets/img/scouts_et_Guides_de_France.svg" alt="scout de france"
+           (click)="navigate(ProjetEnum.SCOUT)">
     </div>
     <!-- Projet 4 -->
     <div class="bloc_project">

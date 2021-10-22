@@ -37,6 +37,11 @@ export class HeaderArticleComponent {
     case ProjetEnum.BMW:
       this.router.navigate(['/prj_bmw']);
       break;
-    }
+    case ProjetEnum.SCOUT:
+      this.router.navigate(['/prj_scout']);
+      break;
+    default:
+      break;
+  }
   }
 }

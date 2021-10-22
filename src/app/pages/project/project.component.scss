@@ -21,8 +21,8 @@
     margin-bottom: 7px;
 
     .bloc_project {
-      height: 500px;
-      width: 500px;
+      height: 400px;
+      width: 400px;
       background-color: #ffffff;
       display: flex;
       justify-content: center;
@@ -33,14 +33,14 @@
       }
 
       .prj_bmw {
-        width: 90%;
+        width: 70%;
         opacity: 0.2;
       }
       .prj_bmw:hover{
         opacity: 1;
       }
       .prj_soregies{
-        width: 90%;
+        width: 70%;
         opacity: 0.2;
       }
       .prj_soregies:hover{
@@ -55,13 +55,29 @@
     margin-bottom: 10px;
 
     .bloc_project {
-      height: 500px;
-      width: 500px;
+      height: 400px;
+      width: 400px;
       background-color: #ffffff;
       box-shadow: 0 1px 20px rgb($greyColor, 0.5);
+      display: flex;
+      justify-content: center;
+
+      img {
+        cursor: pointer;
+      }
+
+      .prj_scout{
+        width: 70%;
+        opacity: 0.2;
+        padding: 10px;
+      }
+      .prj_scout:hover{
+        opacity: 1;
+      }
 
       .pjr_wip{
         width: 90%;
+        height: 80%;
         cursor: pointer;
         opacity: 0.2;
       }

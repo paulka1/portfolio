@@ -1,0 +1,59 @@
+<div id="prj_bmw_container">
+  <app-header-article
+    [title]="'PROJETS'"
+    [article1]="ProjetEnum.BMW"
+    [article2]="ProjetEnum.SOREGIES"
+  ></app-header-article>
+
+  <h1 id="prj_title">SGDF</h1>
+
+  <div class="prj_content">
+    <div class="prj_content_company">
+      <div class="prj_content_company_presentation">
+        <h2>Gestion des camps</h2>
+        <h4>Le contexte</h4>
+        <p>Ce projet a été conduit a sein de l'entreprise Iorga Group.<br>
+          Les Scouts et Guides de France sont un mouvement catholique de jeunesse et d'éducation populaire.
+          L'association est accueillante pour toutes et tous, sans distinction de nationalité, de culture, d'origine sociale ou de croyance.</p>
+        <img src="./assets/img/scout-theme-master-logo.png" alt="scout">
+        <p>Le site à pour but de moderniser et de faciliter la gestion de leurs évenements.</p>
+      </div>
+      <div class="prj_content_company_presentation_card">
+        <app-cards
+          [titleCard]="'IORGA'"
+          [titleJob]="'Apprenti Ingénieur Recherche & Développement'"
+          [imgAlt]="'iorga'"
+          [imgSrc]="'./assets/img/iorga.png'"
+          [href]="'https://www.bgs-associes.com/'"
+          [date]="'depuis Mars 2020'"></app-cards>
+        <app-cards
+          [titleCard]="'SGDF'"
+          [titleJob]="'Groupe d\'activité'"
+          [imgAlt]="'scout'"
+          [href]="'https://www.sgdf.fr/'"
+          [imgSrc]="'./assets/img/scouts_et_Guides_de_France.svg'"
+          [date]="''"></app-cards>
+      </div>
+    </div>
+    <div class="prj_content_description">
+      <h4>Les enjeux</h4>
+      <p>L'enjeu est la refonte de leur outil actuel dans un outil plus moderne et plus simple à l'utilisation.</p>
+      <p>La refonte comprend un changement graphique et d'expérience utilisateur, l'ajout de nouvelles classes d'âge et type de camps,
+        une page de recherche multi-critères, la pagination et le traitement des données (affichages, exports, pdf, ...).</p>
+      <p>On opte pour un tableau de tâche et une organisation de gestion de projet en cascade.</p>
+      <h4>Mes tâches</h4>
+      <p>Mon travail consiste à développé la totalité des demandes sous la supervision du leader technique en charge du projet.</p>
+      <p>Les fonctionnalitées</p>
+      <p>Le changement graphique comprend un changement des couleurs, typographie, mise en page et une modification de la navigation</p>
+      <p>Dans la volonté d'une meilleure fonctionnalité j'ai travaillé sur la mise ne place d'une pagination et une meilleurs utilisation des tableaux de
+      résultat. Tri, mise en page et pagination.</p>
+    </div>
+    <div class="prj_content_video">
+      <video autoplay muted loop id="bmw_film" oncanplay="this.play()" onloadedmetadata="this.muted = true">
+        <source src="../../../assets/img/bmw_film.mp4" type="video/mp4">
+      </video>
+    </div>
+
+  </div>
+</div>
+<app-footer></app-footer>

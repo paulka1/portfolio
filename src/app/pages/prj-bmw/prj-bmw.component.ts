@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import {Router} from '@angular/router';
 import { ProjetEnum } from "../../enum/enum";
 
 @Component({
@@ -11,6 +10,6 @@ export class PrjBmwComponent {
 
   ProjetEnum = ProjetEnum;
 
-  constructor(private router: Router) { }
+  constructor() { }
 
 }

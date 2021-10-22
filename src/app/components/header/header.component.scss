@@ -2,7 +2,8 @@
 
 #main_header {
   .custom-toggler.navbar-toggler {
-    border-color: rgb(3, 3, 3);
+    border-color: white;
+    background-color: white;
     border-width: 2px;
     margin:30px;
   }
@@ -33,7 +34,7 @@
       #logo_header_nom {
         text-align: center;
         background-color: rgba(20, 20, 20, 0.4);
-        font-size: 80px;
+        font-size: 60px;
         color: #ffffff;
         font-weight: bold;
         margin-bottom: 0;
@@ -75,7 +76,7 @@
 
         .nav-item {
           margin: 0 50px;
-          font-size: 30px;
+          font-size: 20px;
 
           .nav-link {
             color: #ffffff;
@@ -104,9 +105,16 @@
 
   /* On screens that are 992px or less */
   @media only screen and (max-width: 992px) {
+
+    //.navbar {
+    //  display: flex;
+    //  flex-direction: row-reverse;
+    //  justify-content: space-around;
+    //}
+
     #logo_header {
       p {
-        font-size: 85px !important;
+        font-size: 55px !important;
         margin-bottom: 10px !important;
       }
     }

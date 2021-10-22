@@ -82,25 +82,25 @@
 }
 
 @media screen and (max-width: 1000px) {
-    h1 {
-      font-size: 115px;
-    }
+  h1 {
+    font-size: 115px;
+  }
 
-    .prj_content_company {
-      display: flex;
-      flex-direction: column!important;
-    }
+  .prj_content_company {
+    display: flex;
+    flex-direction: column!important;
+  }
 
-    .prj_content_company_presentation {
-      width: 100% !important;
-    }
+  .prj_content_company_presentation {
+    width: 100% !important;
+  }
 
-    .prj_content_company_presentation_card {
-      display: flex;
-      flex-direction: row;
-      justify-content: center;
-      width: 100% !important;
-    }
+  .prj_content_company_presentation_card {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100% !important;
+  }
   .navbar{
     justify-content: center!important;
   }

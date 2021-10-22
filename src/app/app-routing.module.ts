@@ -6,6 +6,7 @@ import {PrjSoregiesComponent} from './pages/prj-soregies/prj-soregies.component'
 import {AbCompetenceTechnoAngularComponent} from "./pages/ab-competence-techno-angular/ab-competence-techno-angular.component";
 import {AbCompetenceTechnoAdobeComponent} from "./pages/ab-competence-techno-adobe/ab-competence-techno-adobe.component";
 import {AbCompetenceTechnoNodejsComponent} from "./pages/ab-competence-techno-nodejs/ab-competence-techno-nodejs.component";
+import {PrjScoutComponent} from "./pages/prj-scout/prj-scout.component";
 
 const routes: Routes = [
   {
@@ -24,8 +25,11 @@ const routes: Routes = [
   {
     path: 'prj_soregies',
     component: PrjSoregiesComponent
-  }
-  ,
+  },
+  {
+    path: 'prj_scout',
+    component: PrjScoutComponent
+  },
   {
     path: 'article_angular',
     component: AbCompetenceTechnoAngularComponent

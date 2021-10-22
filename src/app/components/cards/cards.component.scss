@@ -5,12 +5,12 @@
   margin: 30px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   border-radius: 10px;
   box-shadow: 0 1px 20px rgb($greyColor, 0.5);
   padding: 30px;
   justify-content: space-between;
   height: 365px;
+  align-items: center;
 
   .company_img {
     width: 100px;

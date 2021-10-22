@@ -5,7 +5,7 @@ export enum CompetenceTechniqueEnum {
 }
 
 export enum ProjetEnum {
-  SOREGIES = 'Soregies',
-  BMW = 'Bmw',
-  SCOUT = 'Scout'
+  SOREGIES = 'SOREGIES',
+  BMW = 'BMW',
+  SCOUT = 'SCOUT'
 }

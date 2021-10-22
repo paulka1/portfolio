@@ -44,7 +44,8 @@
   h1{
     text-align: center;
     font-size: 100px;
-    background: lightgray;
+    box-shadow: 0 1px 20px rgb($greyColor, 0.5);
+    margin: 10px;
   }
 
   .prj_content{
