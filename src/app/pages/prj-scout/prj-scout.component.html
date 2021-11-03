@@ -32,28 +32,65 @@
           [imgAlt]="'scout'"
           [href]="'https://www.sgdf.fr/'"
           [imgSrc]="'./assets/img/scouts_et_Guides_de_France.svg'"
-          [date]="''"></app-cards>
+          [date]="'Depuis Février 2021'"></app-cards>
       </div>
     </div>
     <div class="prj_content_description">
       <h4>Les enjeux</h4>
       <p>L'enjeu est la refonte de leur outil actuel dans un outil plus moderne et plus simple à l'utilisation.</p>
-      <p>La refonte comprend un changement graphique et d'expérience utilisateur, l'ajout de nouvelles classes d'âge et type de camps,
+      <p>La refonte comprend un changement graphique et d'expérience utilisateur, l'ajout de nouvelles classes d'âge, type de camps,
         une page de recherche multi-critères, la pagination et le traitement des données (affichages, exports, pdf, ...).</p>
       <p>On opte pour un tableau de tâche et une organisation de gestion de projet en cascade.</p>
       <h4>Mes tâches</h4>
-      <p>Mon travail consiste à développé la totalité des demandes sous la supervision du leader technique en charge du projet.</p>
+      <p>Mon travail consiste à développé à partir de la documentation technique la totalité des demandes sous la supervision du leader technique en charge du projet.</p>
       <p>Les fonctionnalitées</p>
-      <p>Le changement graphique comprend un changement des couleurs, typographie, mise en page et une modification de la navigation</p>
+      <p>Le changement graphique comprend un changement des couleurs, typographie, mise en page et une modification de la navigation.</p>
       <p>Dans la volonté d'une meilleure fonctionnalité j'ai travaillé sur la mise ne place d'une pagination et une meilleurs utilisation des tableaux de
-      résultat. Tri, mise en page et pagination.</p>
+      résultat. Tri, recherche multi-critères, mise en page et pagination.</p>
+      <p>L'ensemble de ces tâches m'ont permit de travailler autant sur le front (TypeScript/Angular) que sur le back-end (Php/Symfony).</p>
     </div>
-    <div class="prj_content_video">
-      <video autoplay muted loop id="bmw_film" oncanplay="this.play()" onloadedmetadata="this.muted = true">
-        <source src="../../../assets/img/bmw_film.mp4" type="video/mp4">
-      </video>
+    <div class="prj_content_exemple_pagination">
+      <img class="prj_content_exemple_pagination_image" src="./assets/img/sgdf_1.png" alt="image pagination">
+      <div class="prj_content_exemple_pagination_container">
+
+        <div class="prj_content_exemple_pagination_container_front">
+          <h4>FRONT</h4>
+          <div class="prj_content_exemple_pagination_box">
+            <p>Affiche le tableau</p>
+            <span class="material-icons">table_chart</span>
+<!--            <p>&#123;</p>-->
+            <p><span>&#123; </span>sorBy: 'id',</p>
+            <p>sortDirection: 'DESC',</p>
+            <p>selectedPage: 1<span> &#125;</span></p>
+<!--            <p>&#125;</p>-->
+          </div>
+        </div>
+<!--        <span>this.http.get('/camps', <span>&#123;</span> params: parmas <span>&#125;</span>)</span>-->
+        <div class="prj_content_exemple_pagination_arrow">
+          <span class="material-icons arrow">east</span>
+          <span class="material-icons arrow">west</span>
+        </div>
+        <div class="prj_content_exemple_pagination_container_back">
+          <h4>BACK</h4>
+          <div class="prj_content_exemple_pagination_box">
+
+          </div>
+          <div class="prj_content_exemple_pagination_arrow">
+            <span class="material-icons arrow">east</span>
+            <span class="material-icons arrow">west</span>
+          </div>
+          <div class="prj_content_exemple_pagination_box">
+            <p>Requête SQL</p>
+            <img src="./assets/img/server.png" alt="base de donnée">
+          </div>
+        </div>
+      </div>
     </div>
 
   </div>
 </div>
 <app-footer></app-footer>
+
+
+<!--          this.http.get('/camps', { params: parmas })-->
+
