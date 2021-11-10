@@ -10,6 +10,8 @@ export class PrjBmwComponent {
 
   ProjetEnum = ProjetEnum;
 
-  constructor() { }
+  constructor() {
+    window.scrollTo(0, 0)
+  }
 
 }

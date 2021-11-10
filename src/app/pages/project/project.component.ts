@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {Routes, RouterModule, Router} from '@angular/router';
+import {Routes, RouterModule, Router, NavigationEnd} from '@angular/router';
 import {ProjetEnum} from "../../enum/enum";
 
 @Component({
@@ -7,9 +7,18 @@ import {ProjetEnum} from "../../enum/enum";
   templateUrl: './project.component.html',
   styleUrls: ['./project.component.scss']
 })
-export class ProjectComponent {
+export class ProjectComponent implements OnInit{
 
   constructor(private router: Router) {
+  }
+
+  ngOnInit() {
+    this.router.events.subscribe((evt) => {
+      if (!(evt instanceof NavigationEnd)) {
+        return;
+      }
+      window.scrollTo(0, 0)
+    });
   }
 
   ProjetEnum = ProjetEnum;

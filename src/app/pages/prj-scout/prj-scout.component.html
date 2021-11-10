@@ -37,60 +37,85 @@
     </div>
     <div class="prj_content_description">
       <h4>Les enjeux</h4>
-      <p>L'enjeu est la refonte de leur outil actuel dans un outil plus moderne et plus simple à l'utilisation.</p>
-      <p>La refonte comprend un changement graphique et d'expérience utilisateur, l'ajout de nouvelles classes d'âge, type de camps,
-        une page de recherche multi-critères, la pagination et le traitement des données (affichages, exports, pdf, ...).</p>
-      <p>On opte pour un tableau de tâche et une organisation de gestion de projet en cascade.</p>
+      <p>L'enjeu est la refonte de leur outil actuel dans un outil plus moderne et plus simple à l'utilisation.
+      La refonte comprend un changement graphique et d'expérience utilisateur, l'ajout de nouvelles classes d'âge, type de camps,
+        une page de recherche multi-critères, la pagination et le traitement des données (affichages, exports, pdf, ...).
+      On opte pour un tableau de tâche et une organisation de gestion de projet en cascade.</p>
       <h4>Mes tâches</h4>
       <p>Mon travail consiste à développé à partir de la documentation technique la totalité des demandes sous la supervision du leader technique en charge du projet.</p>
-      <p>Les fonctionnalitées</p>
-      <p>Le changement graphique comprend un changement des couleurs, typographie, mise en page et une modification de la navigation.</p>
-      <p>Dans la volonté d'une meilleure fonctionnalité j'ai travaillé sur la mise ne place d'une pagination et une meilleurs utilisation des tableaux de
-      résultat. Tri, recherche multi-critères, mise en page et pagination.</p>
-      <p>L'ensemble de ces tâches m'ont permit de travailler autant sur le front (TypeScript/Angular) que sur le back-end (Php/Symfony).</p>
+      <h4>Les fonctionnalitées</h4>
+      <ul>
+        <li>Réinitialiser des dossiers</li>
+        <li>Archivages automatique des dossiers</li>
+        <li>Gestion des évènements clavier/souris</li>
+        <li>Gestion droit</li>
+        <li>Modifictaion du module de création de dossier</li>
+        <li>Appel API</li>
+        <li>Import Csv</li>
+        <li>Import de pièces-jointes</li>
+        <li>Nouveau type de camps</li>
+        <li>Nouveau type de classe d'âge</li>
+        <li>Changement de la charte graphique (couleurs, typographie, mise en page,une modification de la navigation).</li>
+        <li>Responsive</li>
+        <li>Design</li>
+        Dans la volonté d'une meilleure utilisation des données et des tableaux de résultat.
+        <li>pagination</li>
+        <li>Tri</li>
+        <li>recherche multi-critères</li>
+        <li>mise en page</li>
+        L'ensemble de ces tâches m'ont permit de travailler autant sur le front (TypeScript/Angular) que sur le back-end (Php/Symfony).
+      </ul>
     </div>
     <div class="prj_content_exemple_pagination">
-      <img class="prj_content_exemple_pagination_image" src="./assets/img/sgdf_1.png" alt="image pagination">
+      <h4>Exemple d'implémentation</h4>
+      <p>Pour l'ajout de la fontionnalité de tri et de pagination j'ai côté utilisateur ajouté un bouton cliquable dynamique sur chaque colonne (<span class="red">1</span>)
+      et un composant de pagination (<span class="red">2</span>).</p>
+      <img class="prj_content_exemple_pagination_image" src="./assets/img/sgdf_6.png" alt="image pagination">
+      <p>Un click sur la pagination ou sur le bouton tri déclenche un envoi de données côté serveur.</p>
       <div class="prj_content_exemple_pagination_container">
-
         <div class="prj_content_exemple_pagination_container_front">
           <h4>FRONT</h4>
           <div class="prj_content_exemple_pagination_box">
-            <p>Affiche le tableau</p>
-            <span class="material-icons">table_chart</span>
-<!--            <p>&#123;</p>-->
-            <p><span>&#123; </span>sorBy: 'id',</p>
+            <h5>Interface utilisateur</h5>
+            <span class="material-icons prj_content_exemple_pagination_box_img">table_chart</span>
+            <span class="prj_content_exemple_pagination_object">
+              <p><span>&#123; </span>sorBy: 'id',</p>
             <p>sortDirection: 'DESC',</p>
             <p>selectedPage: 1<span> &#125;</span></p>
-<!--            <p>&#125;</p>-->
+            </span>
           </div>
         </div>
-<!--        <span>this.http.get('/camps', <span>&#123;</span> params: parmas <span>&#125;</span>)</span>-->
         <div class="prj_content_exemple_pagination_arrow">
+          <span>Appel API</span>
           <span class="material-icons arrow">east</span>
           <span class="material-icons arrow">west</span>
         </div>
         <div class="prj_content_exemple_pagination_container_back">
           <h4>BACK</h4>
           <div class="prj_content_exemple_pagination_box">
-
+            <h5>Serveur</h5>
+            <span class="material-icons prj_content_exemple_pagination_box_img">
+            engineering
+            </span>
           </div>
           <div class="prj_content_exemple_pagination_arrow">
             <span class="material-icons arrow">east</span>
             <span class="material-icons arrow">west</span>
           </div>
           <div class="prj_content_exemple_pagination_box">
+            <h5>Base de données</h5>
             <p>Requête SQL</p>
             <img src="./assets/img/server.png" alt="base de donnée">
           </div>
         </div>
       </div>
+      <p>Côté front-end j'ai construit un <span class="prj_content_exemple_pagination_object">object dynamique</span> en TypeScript contenant les valeurs choisit par l'utilisateur.
+      SortBy correspond à la colonne choisit (<span class="red">1</span>) et sortDirection si l'utilisateur veut le tableau classé par ordre ascendant ou descendant.
+      SelectedPage (<span class="red">2</span>) correspond à la page choisit par l'uilisateur.
+      L'object est ensuite envoyé par un appel Api côté serveur. Le serveur traite la donnée, la transforme et envoit les paramètres adéquate à la base de
+        données pour obtenir les informations voulues. Les informations sont ensuite renvoyées côté front pour être affichées dans le tableau.</p>
     </div>
-
   </div>
 </div>
 <app-footer></app-footer>
-
-
-<!--          this.http.get('/camps', { params: parmas })-->
 

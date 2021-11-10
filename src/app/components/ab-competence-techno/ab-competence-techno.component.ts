@@ -29,6 +29,8 @@ export class AbCompetenceTechnoComponent {
       case CompetenceTechniqueEnum.NODEJS:
         this.router.navigate(['/article_nodejs']);
         break;
+      default:
+        break;
     }
   }
 }

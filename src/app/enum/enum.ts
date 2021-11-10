@@ -1,7 +1,7 @@
 export enum CompetenceTechniqueEnum {
-  ANGULAR = 'Angular',
-  NODEJS = 'NodeJs',
-  ADOBE = 'Adobe'
+  ANGULAR = 'ANGULAR',
+  NODEJS = 'NODEJS',
+  ADOBE = 'ADOBE'
 }
 
 export enum ProjetEnum {
