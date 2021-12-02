@@ -17,6 +17,67 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <script type="text/javascript">
 
+    $(document).ready(function() {
+    $('#submit').click(function(e) {
+
+      e.preventDefault();
+
+      var URL = "https://2c2025myxe.execute-api.eu-west-3.amazonaws.com/stageNamev1";
+
+      var name = $("#name").val();
+      var message = $("#message").val();
+      var email = $("#email").val();
+
+      var data = {
+        name : name,
+        message : message,
+        email : email,
+      };
+
+      $.ajax({
+        type: "POST",
+        url : URL,
+        dataType: "json",
+        crossDomain: "true",
+        contentType: "application/json; charset=utf-8",
+        data: JSON.stringify(data),
+
+        success: function () {
+          // clear form and show a success message
+          alert("Thanks for the email! We will contact you soon.");
+          document.getElementById("contact-form").reset();
+        },
+        error: function () {
+          // show an error message
+          alert("Please try again, thanks!");
+          console.log('DATA :', data);
+        }});
+    })});
+
+
+     // $(document).ready(function() {
+     //   $("#submit").click(function(e) {
+     //   e.preventDefault();
+     //   var name = $("#name").val(),
+     //     email = $("#email").val(),
+     //     message = $("#message").val();
+     //   $.ajax({
+     //     type: "POST",
+     //     url: 'https://2c2025myxe.execute-api.eu-west-3.amazonaws.com/stageNamev1',
+     //     contentType: "application/json; charset=utf-8",
+     //     data: JSON.stringify({
+     //       'name': name,
+     //       'email': email,
+     //       'message': message
+     //     }),
+     //     success: function(res){
+     //       $('#form-response').html('<div class="alert alert-info" role="alert">Welcome to the queue! Your path will begin shortly...</div>');},
+     //     error: function(){
+     //       $('#form-response').html('<div class="alert alert-info" role="alert">Something went wrong... We are working on it!</div>');
+    //       }}); }) });
+  </script>
 </body>
 </html>

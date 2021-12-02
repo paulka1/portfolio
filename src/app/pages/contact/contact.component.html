@@ -3,55 +3,51 @@
       <h2 class="title_section">CONTACT</h2>
     </div>
     <div class="form">
-        <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
-            <div class="row">
-                <div class="col-12 text-center">
-                  <label for="name">
-                    <input type="text" placeholder="Nom" formControlName="contact_name" required>
-                  </label>
-                </div>
-                <div class="col-12 text-center">
-                  <div *ngIf="contactForm.get('contact_name').errors && contactForm.get('contact_name').touched">
-                      <span class='errorMessage'>champ requis</span>
-                  </div>
-                </div>
-              </div>
 
-              <div class="row">
-                <div class="col-12 text-center">
-                  <label for="email">
-                    <input type="text" placeholder="Email" formControlName="contact_email" id="email" required>
-                  </label>
-                  </div>
-                  <div>
-                    <div *ngIf="contactForm.get('contact_email').errors && contactForm.get('contact_email').touched">
-                        <span class='errorMessage' style="margin-bottom: 100px">champ requis</span>
-                    </div>
-                  </div>
-              </div>
+      <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
+        <div class="row">
+          <div class="col-12 text-center">
+            <input type="text" name="name" id="name" placeholder="Nom" formControlName="contact_name" required/>
+          </div>
+          <div class="col-12 text-center">
+            <div *ngIf="contactForm.get('contact_name').errors && contactForm.get('contact_name').touched">
+              <span class='errorMessage'>champ requis</span>
+            </div>
+          </div>
+        </div>
 
-              <div class="row">
-                  <div class="col-12 text-center">
-                    <label for="text">
+        <div class="row">
+          <div class="col-12 text-center">
+            <input type="text" placeholder="Email" formControlName="contact_email" id="email" required>
+          </div>
+          <div>
+            <div *ngIf="contactForm.get('contact_email').errors && contactForm.get('contact_email').touched">
+              <span class='errorMessage' style="margin-bottom: 100px">champ requis</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 text-center">
                       <textarea
-                      type="text"
-                      placeholder="Message"
-                      formControlName="contact_text"
-                      class="textarea"
-                      autosize></textarea>
-                    </label>
-                  </div>
-                  <div class="col-12 text-center">
-                    <div *ngIf="contactForm.get('contact_text').errors && contactForm.get('contact_text').touched">
-                        <span class='errorMessage'>champ requis</span>
-                    </div>
-                  </div>
-              </div>
+                        name="message" id="message"
+                        formControlName="contact_text"
+                        placeholder="Message"
+                        class="textarea"
+                        autosize></textarea>
+          </div>
+          <div class="col-12 text-center">
+            <div *ngIf="contactForm.get('contact_text').errors && contactForm.get('contact_text').touched">
+              <span class='errorMessage'>champ requis</span>
+            </div>
+          </div>
+        </div>
 
-              <div class="row">
-                <button type="submit" [disabled]="!contactForm.valid" class="btn">Send</button>
-              </div>
+        <div class="row">
+          <button id="submit" type="submit" [disabled]="!contactForm.valid" class="btn">Send</button>
+        </div>
 
-        </form>
+      </form>
+
     </div>
 </div>

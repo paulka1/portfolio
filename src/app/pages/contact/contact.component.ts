@@ -33,11 +33,11 @@ export class ContactComponent implements OnInit {
   }
 
   onSubmit(){
-    this.contactService.sendEmail(this.contactForm.value).subscribe(
-      res => {
-        this.emailSend = true;
-      }
-      );
+    // this.contactService.sendEmail(this.contactForm.value).subscribe(
+    //   res => {
+    //     this.emailSend = true;
+    //   }
+    //   )
     this.formInit()
    }
 }

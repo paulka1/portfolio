@@ -145,6 +145,17 @@
       }
     }
   }
+
+  .prj_content_img {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    img {
+      width: 90%;
+      padding: 10px;
+    }
+  }
 }
 
 @media screen and (max-width: 1000px) {
