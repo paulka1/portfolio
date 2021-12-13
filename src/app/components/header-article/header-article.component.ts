@@ -40,6 +40,9 @@ export class HeaderArticleComponent {
     case ProjetEnum.SCOUT:
       this.router.navigate(['/prj_scout']);
       break;
+    case CompetenceTechniqueEnum.AWS:
+      this.router.navigate(['/article_aws']);
+      break;
     default:
       break;
   }

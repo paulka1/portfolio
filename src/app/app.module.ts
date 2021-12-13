@@ -25,6 +25,9 @@ import { HeaderArticleComponent } from './components/header-article/header-artic
 import { AbCompetenceTechnoAdobeComponent } from './pages/ab-competence-techno-adobe/ab-competence-techno-adobe.component';
 import { AbCompetenceTechnoNodejsComponent } from './pages/ab-competence-techno-nodejs/ab-competence-techno-nodejs.component';
 import { PrjScoutComponent } from './pages/prj-scout/prj-scout.component';
+import { AbCompetenceTechnoAwsComponent } from './pages/ab-competence-techno-aws/ab-competence-techno-aws.component';
+import { SnackbarComponent } from './shared/snackbar/snackbar.component';
+import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -48,7 +51,9 @@ import { PrjScoutComponent } from './pages/prj-scout/prj-scout.component';
     HeaderArticleComponent,
     AbCompetenceTechnoAdobeComponent,
     AbCompetenceTechnoNodejsComponent,
-    PrjScoutComponent
+    PrjScoutComponent,
+    AbCompetenceTechnoAwsComponent,
+    SnackbarComponent
     ],
   imports: [
     BrowserModule,
@@ -56,7 +61,8 @@ import { PrjScoutComponent } from './pages/prj-scout/prj-scout.component';
     FormsModule,
     TextareaAutosizeModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    NoopAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

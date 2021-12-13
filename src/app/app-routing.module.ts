@@ -7,6 +7,7 @@ import {AbCompetenceTechnoAngularComponent} from "./pages/ab-competence-techno-a
 import {AbCompetenceTechnoAdobeComponent} from "./pages/ab-competence-techno-adobe/ab-competence-techno-adobe.component";
 import {AbCompetenceTechnoNodejsComponent} from "./pages/ab-competence-techno-nodejs/ab-competence-techno-nodejs.component";
 import {PrjScoutComponent} from "./pages/prj-scout/prj-scout.component";
+import {AbCompetenceTechnoAwsComponent} from "./pages/ab-competence-techno-aws/ab-competence-techno-aws.component";
 
 const routes: Routes = [
   {
@@ -41,6 +42,10 @@ const routes: Routes = [
   {
     path: 'article_nodejs',
     component: AbCompetenceTechnoNodejsComponent
+  },
+  {
+    path: 'article_aws',
+    component: AbCompetenceTechnoAwsComponent
   }
 ];
 

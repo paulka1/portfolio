@@ -1,0 +1,64 @@
+@import '../../../styles.scss';
+
+#ab_aws_container{
+
+  .ab_aws_title {
+    text-align: center;
+    font-size: 100px;
+    box-shadow: 0 1px 20px rgb($greyColor, 0.5);
+    margin: 10px;
+  }
+  .ab_aws_image{
+    display: flex;
+    justify-content: center;
+    #ab_aws_image_icon{
+      width: 300px;
+    }
+  }
+  .ab_aws_content{
+    padding:50px;
+    .ab_aws_content_presentation{
+      display: flex;
+    }
+    .ab_aws_content_presentation_schema{
+      width: 100%;
+    }
+    .ab_aws_content_evolution{
+      display: flex;
+      .ab_aws_evolution_image{
+        #ab_aws_image_competence{
+          width: 200px;
+        }
+      }
+    }
+  }
+}
+
+/* On screens that are 600px or less*/
+@media only screen and (max-width: 600px) {
+  h1 {
+    font-size: 75px!important;
+  }
+  .ab_aws_image{
+    #ab_aws_image_icon{
+      width: 200px;
+    }
+  }
+  .ab_aws_content{
+    padding:50px;
+    .ab_aws_content_presentation{
+      display: flex;
+      flex-direction: column;
+    }
+    .ab_aws_content_evolution{
+      display: flex;
+      flex-direction: column-reverse;
+      align-items: center;
+      .ab_aws_evolution_image{
+        #ab_aws_image_competence{
+          width: 200px;
+        }
+      }
+    }
+  }
+}

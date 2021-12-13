@@ -1,0 +1,67 @@
+<div id="ab_aws_container">
+  <app-header-article
+    [title]="'TECHNO'"
+    [article1]="CompetenceTechniqueEnum.ADOBE"
+    [article2]="CompetenceTechniqueEnum.NODEJS"
+    [article3]="CompetenceTechniqueEnum.ANGULAR"
+  ></app-header-article>
+  <h1 class="ab_aws_title">AWS</h1>
+  <!--  <div class="ab_aws_image">-->
+  <!--    <img id="ab_angular_image_icon" src="./assets/img/angular-icon.png" alt="angular">-->
+  <!--  </div>-->
+  <div class="ab_aws_content">
+    <div class="ab_aws_content_presentation">
+      <div class="ab_aws_content_presentation_text">
+        <h4>La technologie aws</h4>
+        <p>
+          Amazon Web Services (AWS) est la plateforme cloud de Amazon. Elle la plus complète et la plus largement adoptée au monde.
+          Elle propose plus de 200 services complets issus de centres de données du monde entier. Des millions de clients
+          (des startups les plus dynamiques au monde, de très grandes entreprises et des agences fédérales de premier plan)
+          utilisent AWS pour réduire leurs coûts, gagner en agilité et innover plus rapidement.
+        </p>
+        <p>Je m'intéresse à la technologie AWS depuis quelques mois et j'ai pour objectif de passer les certifications afin de me spécialiser.
+          Pour ce faire j'ai suivis plusieurs fomrations en ligne et je me suis inscrit à AWS Educate qui est le programme de AWS.
+          Pour ce portfolio j'ai d'ailleurs hébergé le site avec AWS.</p>
+        <h4>Explications</h4>
+        <p>Pour héberger et faire fonctionner le site j'ai eu recours à 4 fonctionnalités AWS. Le bucket S3, le API Gateway, les Lambda et le SES.
+          Ces fonctionnalitées m'ont permi d'héberger un sute web static serverless pour 0€.</p>
+        <img class="ab_aws_content_presentation_schema" src="./assets/img/awsSchema.png" alt="awsSchema">
+        <p>Amazon Simple Storage Service (abrégé S3) est un service de stockage de données.
+          Le bucket s3 permet de stocker de la data sans mettre un route un serveur. On peut y stocker tous types de données et
+          notamment un site web static. Une fois le site stocké dans le bucket S3 le site est visible par un lien généré par le bucket.
+          Le problème est qu'il n'est visible que par moi et le formulaire de contact ne fonctionne pas.</p>
+        <p>Pour le fonctionnement du fomulaire de contact j'ai choisi de me servir du service lambda pour m'éviter de mettre en
+          route un serveur Ec2 payant qui aurait fonctionné non stop pour une faible utilité.
+        </p>
+      </div>
+      <div class="ab_aws_content_presentation_card">
+        <app-cards
+          [titleCard]="'AWS'"
+          [titleJob]="'Plateforme de cloud'"
+          [imgAlt]="'Aws'"
+          [href]="'https://aws.amazon.com/fr/what-is-aws/'"
+          [imgSrc]="'./assets/img/aws-icon.png'"
+        ></app-cards>
+      </div>
+    </div>
+
+    <p>Généralement il faut mettre en route un serveur et héberger le code qui gère et envoye les données du formulaire de contact sur le serveur.</p>
+    <p>Une lambda permet de créer une fonction qui réagit à un déclencheur (trigger) comme le bouton envoyer du formulaire de contact sans à avoir
+      à mettre en place un serveur qui tourne h24 en attente de cette évenement.</p>
+    <p>L'api Gateway est la porte qui fait le lien entre la lambda et le bucket S3. A la création de l'api gateway on peut choisir les méthodes souhaitées (POST, GET, ...) et l'api gateway génére
+      une route api. Route utilisé pour liée le bucket s3 et le servir api gateway. L'api gateway déclenche ensuite la lambda.</p>
+    <p>Le service SES est le service Amazon Simple Email Service qui permet l'envoi d'email.</p>
+    <p>J'aurais pût ensuite utiliser le service S53 ou cloudFront pour modifier le nom de domaine et sécuriser. Pour passer de http://aws.us-east.portfolio.fr à https://paulcharendolPortfolio.com par exemple.</p>
+
+    <div class="ab_aws_content_evolution">
+      <div class="ab_aws_content_evolution_text">
+        <h4>Evolution</h4>
+        <p>Je suis toujours en cours d'apprentissage afin d'obtenir le premier niveau de compétence (cloud practitioner).</p>
+      </div>
+      <div class="ab_aws_evolution_image">
+        <img id="ab_aws_image_competence" src="./assets/img/imgComptence.png" alt="compétences">
+      </div>
+    </div>
+  </div>
+</div>
+<app-footer></app-footer>

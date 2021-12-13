@@ -1,0 +1,29 @@
+.snackbar-container{
+  width: 100%;
+  color:white;
+  z-index: 99999 !important;
+}
+
+.snackbar-data-block {
+  width: 95%;
+  float: left;
+}
+
+.snackbar-title-block {
+  width: 95%;
+  font-weight: bold;
+  float: left;
+}
+
+.snackbar-action-block {
+  width: 5%;
+  float: right;
+}
+
+.snackbar-close-button {
+  color: white;
+  border: 0px;
+  background-color: transparent;
+  cursor: default;
+  outline: none;
+}
