@@ -3,7 +3,9 @@
     <img class="ab_competences_techno_logo" src="{{srcLogo}}" alt="{{altLogo}}">
     <p class="ab_competences_techno_titre">{{technologie}}</p>
     <ng-container *ngIf="isArticle">
-      <img class="ab_competences_techno_article" src="{{srcLogoArticle}}" alt="article" (click)="navigateToProject(technologie)">
+      <span class="material-icons ab_competences_techno_article" (click)="navigateToProject(technologie)">
+open_in_new
+</span>
     </ng-container>
   </div>
 </div>

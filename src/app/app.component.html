@@ -1,1 +1,105 @@
+<div>
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light" *ngIf="visible && headerHome">
+    <button class="navbar-toggler custom-toggler"
+            type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContentHome"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContentHome">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#anchor-project">Réalisations</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#anchor-about">A Propos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#anchor-competence">Compétences</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#anchor-contact">Contact</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HEADER Navigation Article -->
+  <nav class="navbar navbar-expand-lg navbar-light" *ngIf="visible && headerArticle">
+    <button class="navbar-toggler custom-toggler"
+            type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContentArticle"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContentArticle">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" (click)="navigateToProject('')">HOME</a>
+        </li>
+        <ng-container>
+          <li class="nav-item">
+            <a class="nav-link" (click)="navigateToProject(CompetenceTechniqueEnum.ANGULAR)">ANGULAR</a>
+          </li>
+        </ng-container>
+        <ng-container>
+          <li class="nav-item">
+            <a class="nav-link" (click)="navigateToProject(CompetenceTechniqueEnum.NODEJS)">NODEJS</a>
+          </li>
+        </ng-container>
+        <ng-container>
+          <li class="nav-item">
+            <a class="nav-link" (click)="navigateToProject(CompetenceTechniqueEnum.ADOBE)">ADOBE</a>
+          </li>
+        </ng-container>
+        <ng-container>
+          <li class="nav-item">
+            <a class="nav-link" (click)="navigateToProject(CompetenceTechniqueEnum.AWS)">AWS</a>
+          </li>
+        </ng-container>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HEADER Navigation Projet -->
+  <nav class="navbar navbar-expand-lg navbar-light" *ngIf="visible && headerProjet">
+    <button class="navbar-toggler custom-toggler"
+            type="button" data-toggle="collapse"
+            data-target="#navbarSupportedContentProjet"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContentProjet">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" (click)="navigateToProject('')">HOME</a>
+        </li>
+        <ng-container>
+          <li class="nav-item">
+            <a class="nav-link" (click)="navigateToProject(ProjetEnum.BMW)">BMW</a>
+          </li>
+        </ng-container>
+        <ng-container>
+          <li class="nav-item">
+            <a class="nav-link" (click)="navigateToProject(ProjetEnum.SCOUT)">SCOUTS</a>
+          </li>
+        </ng-container>
+        <ng-container>
+          <li class="nav-item">
+            <a class="nav-link" (click)="navigateToProject(ProjetEnum.SOREGIES)">SOREGIES</a>
+          </li>
+        </ng-container>
+      </ul>
+    </div>
+  </nav>
 <router-outlet></router-outlet>
+</div>
