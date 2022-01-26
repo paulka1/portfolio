@@ -36,13 +36,18 @@
   </nav>
 
   <div class="text_header">
-    <div class="text_header_video" *ngIf="!displayHeaderImage">
+    <div class="text_header_video" *ngIf="false">
       <video autoplay muted loop id="myVideo" oncanplay="this.play()" onloadedmetadata="this.muted = true">
         <source src="./assets/img/video2.0.m4v" type="video/mp4">
       </video>
     </div>
-    <div class="text_header_image" *ngIf="displayHeaderImage">
+    <div class="text_header_image" *ngIf="true">
       <img src="./assets/img/001timelouche1.jpg" alt="image">
+      <p class="text_header_image_text">
+        Je travaille à l'élaboration de sites internets, de logiciels et d'applications mobiles.
+        Ma formation en image me permet aussi de travailler sur le design des applications.
+        J'occupe en ce moment le poste d'ingénieur en recherche et développement pour le groupe The Blockchain Group.
+      </p>
     </div>
   </div>
 </div>

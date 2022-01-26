@@ -79,6 +79,7 @@
 
       .navbar-nav {
         margin: auto;
+        justify-content: center;
 
         .nav-item {
           margin: 0 50px;
@@ -106,6 +107,17 @@
   .text_header_image {
     img {
       width: 100%;
+    }
+    .text_header_image_text {
+      box-shadow: 0 1px 20px rgb($greyColor, 0.5);
+      background-color: whitesmoke;
+      position: absolute;
+      bottom: 100px;
+      right: 10px;
+      border-radius: 15px;
+      font-size: 20px;
+      width: 30%;
+      padding: 20px;
     }
   }
 
